@@ -49,23 +49,28 @@ def save_rows_to_reports(acq_df):
     # Remove rows where experiment info is missing
     acq_df = acq_df.dropna(subset=['experiment_number', 'experiment_group'])
 
-    for _, row in acq_df.iterrows():
-        experiment = str(int(row['experiment_number']))
-        acq_date = row['acquisition_date']
-        user_row = row.drop(labels='acquisition_date')
+    grouped = acq_df.groupby(['experiment_number', 'acquisition_date'])
 
-        # Create directory for experiment if needed
+    for (experiment_number, acq_date), group in grouped:
+        experiment = str(int(experiment_number))
         experiment_dir = os.path.join(REPORTS_DIR, experiment)
         os.makedirs(experiment_dir, exist_ok=True)
 
-        # File path to write to
-        report_file = os.path.join(experiment_dir, f"{acq_date}.csv")
+        # Zjisti, zda v adresáři už existuje nějaký soubor pro dané acquisition_date (včetně Dx verzí)
+        existing_files = os.listdir(experiment_dir)
+        prefix = f"{acq_date}"
+        already_exists = any(fname.startswith(prefix) and fname.endswith(".csv") for fname in existing_files)
 
-        # Append user to the file
-        if os.path.exists(report_file):
-            user_row.to_frame().T.to_csv(report_file, mode='a', header=False, index=False)
-        else:
-            user_row.to_frame().T.to_csv(report_file, mode='w', header=True, index=False)
+        if already_exists:
+            print(f"[SKIP] Report for experiment {experiment}, date {acq_date} already exists (any variant).")
+            continue
+
+        group.drop(columns=['acquisition_date'], inplace=True)
+        report_file = os.path.join(experiment_dir, f"{acq_date}.csv")
+        group.to_csv(report_file, index=False)
+        print(f"[OK] Created report for experiment {experiment}, date {acq_date}")
+
+
 
 
 if __name__ == "__main__":

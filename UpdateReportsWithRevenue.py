@@ -46,12 +46,26 @@ def process_report(report_path, experiment_number):
         print(f"[WARNING] Required columns missing in {report_path}, skipping.")
         return
 
-    # Extract acquisition date from filename
+    # Extract acquisition date
     acq_date_str = os.path.basename(report_path).split(".csv")[0]
     acq_date = datetime.strptime(acq_date_str, "%Y-%m-%d").date()
 
+    SRM_CSV = "SRM_Report.csv"
+    srm_df = pd.read_csv(SRM_CSV)
+    srm_df['last_seen'] = pd.to_datetime(srm_df['last_seen']).dt.date
+
+    # Get last_seen from SRM_Report
+    last_seen_row = srm_df[srm_df['experiment_number'] == int(experiment_number)]
+    if last_seen_row.empty:
+        print(f"[WARNING] No SRM info found for experiment {experiment_number}, skipping.")
+        return
+    last_seen = last_seen_row.iloc[0]['last_seen']
+    max_days = (last_seen - acq_date).days
+    if max_days < 0:
+        print(f"[INFO] Acquisition date after experiment end for {report_path}, skipping.")
+        return
+
     user_ids = set(df['user_pseudo_id'].astype(str))
-    max_days = 90
 
     for idx, current_date in enumerate(daterange(acq_date, max_days)):
         ad_file = os.path.join(AD_REVENUE_DIR, f"{current_date}.csv")
@@ -72,8 +86,11 @@ def process_report(report_path, experiment_number):
         else:
             iap_map = {}
 
-        df[f"AdRev_D{idx}"] = df['user_pseudo_id'].map(ad_map).fillna(0)
-        df[f"IAPRev_D{idx}"] = df['user_pseudo_id'].map(iap_map).fillna(0)
+        new_columns = pd.DataFrame({
+            f"AdRev_D{idx}": df['user_pseudo_id'].map(ad_map).fillna(0),
+            f"IAPRev_D{idx}": df['user_pseudo_id'].map(iap_map).fillna(0)
+        })
+        df = pd.concat([df.reset_index(drop=True), new_columns.reset_index(drop=True)], axis=1)
 
         if ad_day.empty and iap_day.empty:
             break
@@ -86,8 +103,29 @@ def process_report(report_path, experiment_number):
     df['total_iap_revenue'] = df[iap_cols].sum(axis=1)
     df['total_revenue'] = df['total_ad_revenue'] + df['total_iap_revenue']
 
-    df.to_csv(report_path, index=False)
-    print(f"[OK] Updated {report_path} with revenue data.")
+    import re
+
+    day_numbers = []
+    for col in df.columns:
+        match = re.match(r"AdRev_D(\d+)$", col)
+        if match:
+            day_numbers.append(int(match.group(1)))
+
+    last_day = max(day_numbers, default=0)
+
+
+    # Build new filename with _Dx suffix
+    base_name = os.path.basename(report_path).replace(".csv", "")
+    new_name = f"{base_name}_D{last_day}.csv"
+    new_path = os.path.join(os.path.dirname(report_path), new_name)
+
+    # Remove old file to avoid duplicates
+    os.remove(report_path)
+
+    # Save with new name
+    df.to_csv(new_path, index=False)
+    print(f"[OK] Updated {new_name} with revenue data.")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Update experiment reports with revenue data.")
