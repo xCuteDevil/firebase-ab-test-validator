@@ -37,17 +37,21 @@ else:
 
 # --- Sidebar ---
 with st.sidebar:
-    st.title("🫪 A/B Testy")
-    selected_view = st.radio("Zobrazit", ["Přehled", "Výnosy", "Retence"])
+    st.title("📈 A/B Testy")
+
+    selected_game = st.selectbox("Vyber hru:", ["Hexapolis", "Age of Tanks", "Tanks Arena", "Spacehex", "Mecha Fortress"])
     st.markdown("---")
+
+    selected_mode = st.radio("Typ metriky:", ["Revenue", "Revenue per User"])
     selected_metric = st.selectbox("Zobrazit metriku:", ["Total Revenue", "Ad Revenue", "IAP Revenue"])
     st.markdown("---")
+
     if not os.path.exists(REPORTS_DIR):
         st.error("Složka 'Reports/' neexistuje.")
         st.stop()
+
     experiment_ids = sorted([f for f in os.listdir(REPORTS_DIR) if os.path.isdir(os.path.join(REPORTS_DIR, f))])
     selected_experiment = st.selectbox("Vyber experiment ID:", experiment_ids)
-
 
 # --- Metadata z SRM ---
 exp_row = srm_df[srm_df["experiment_number"] == selected_experiment]
@@ -86,32 +90,59 @@ if os.path.exists(experiment_path):
     for d_index, f in enumerate(files):
         df = pd.read_csv(os.path.join(experiment_path, f)).fillna(0)
         df["den"] = d_index
+
         if "total_revenue" not in df.columns:
             df["total_revenue"] = df.get("total_ad_revenue", 0) + df.get("total_iap_revenue", 0)
-        cumulative_by_day.append(df[["experiment_group", "total_revenue", "den"]])
+
+        if selected_metric == "Total Revenue":
+            df["selected_value"] = df["total_revenue"]
+        elif selected_metric == "Ad Revenue":
+            df["selected_value"] = df.get("total_ad_revenue", 0)
+        elif selected_metric == "IAP Revenue":
+            df["selected_value"] = df.get("total_iap_revenue", 0)
+
+        cumulative_by_day.append(df[["experiment_group", "user_pseudo_id", "selected_value", "den"]])
         data.append(df)
 else:
     st.warning("Data pro tento experiment nejsou dostupná.")
 
-# --- Graf kumulativního total revenue ---
+# --- Graf kumulativního revenue ---
 if cumulative_by_day:
     full_daily = pd.concat(cumulative_by_day, ignore_index=True)
     full_daily.sort_values(by=["experiment_group", "den"], inplace=True)
-    full_daily["cumulative_total_revenue"] = full_daily.groupby("experiment_group")["total_revenue"].cumsum()
+
+    user_counts = full_daily.groupby(["den", "experiment_group"])['user_pseudo_id'].nunique().reset_index(name="new_users")
+    user_counts["cumulative_users"] = user_counts.groupby("experiment_group")["new_users"].cumsum()
+
+    daily_sum = full_daily.groupby(["experiment_group", "den"]).agg(
+        revenue_sum=('selected_value', 'sum')
+    ).reset_index()
+    daily_sum["cumulative_revenue"] = daily_sum.groupby("experiment_group")["revenue_sum"].cumsum()
+
+    daily_sum = pd.merge(daily_sum, user_counts, on=["den", "experiment_group"], how="left")
+
+    if selected_mode == "Revenue per User":
+        daily_sum["value"] = daily_sum["cumulative_revenue"] / daily_sum["cumulative_users"]
+    else:
+        daily_sum["value"] = daily_sum["cumulative_revenue"]
+
+    y_label = f"Cumulative {selected_metric}"
+    if selected_mode == "Revenue per User":
+        y_label += " per User"
 
     fig = px.line(
-        full_daily,
+        daily_sum,
         x="den",
-        y="cumulative_total_revenue",
+        y="value",
         color="experiment_group",
         labels={
             "den": "Den",
-            "cumulative_total_revenue": "Cumulative Total Revenue",
+            "value": y_label,
             "experiment_group": "Varianta"
         },
         height=450
     )
-    st.subheader("📈 Cumulative Total Revenue by Variant")
+    st.subheader(f"📈 {y_label} by Variant")
     st.plotly_chart(fig, use_container_width=True)
 
 # --- Souhrnná tabulka variant ---
@@ -127,10 +158,12 @@ if data:
         Revenue_per_User=('total_revenue', 'mean'),
         Std_Dev=('total_revenue', 'std')
     )
+
     baseline_group = sorted(summary.index)[0]
     baseline_mean = summary.loc[baseline_group, "Revenue_per_User"]
     summary["Rozdíl od baseline"] = summary["Revenue_per_User"].apply(
-        lambda x: "0.00%" if x == baseline_mean else f"{((x - baseline_mean) / baseline_mean) * 100:+.2f}%")
+        lambda x: "0.00%" if x == baseline_mean else f"{((x - baseline_mean) / baseline_mean) * 100:+.2f}%"
+    )
 
     p_values = []
     baseline_data = full_data[full_data["experiment_group"] == baseline_group]["total_revenue"]
@@ -156,4 +189,4 @@ if data:
     summary["Total revenue"] = summary["Total revenue"].apply(lambda x: f"${x:,.2f}")
     summary["Standardní odchylka"] = summary["Standardní odchylka"].apply(lambda x: f"${x:.2f}")
 
-    st.dataframe(summary, use_container_width=True)
+    st.dataframe(summary, use_container_width=True, hide_index=True)
