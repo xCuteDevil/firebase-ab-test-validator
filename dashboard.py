@@ -37,14 +37,17 @@ else:
 
 # --- Sidebar ---
 with st.sidebar:
-    st.title("🤪 A/B Experimenty")
+    st.title("🫪 A/B Testy")
     selected_view = st.radio("Zobrazit", ["Přehled", "Výnosy", "Retence"])
+    st.markdown("---")
+    selected_metric = st.selectbox("Zobrazit metriku:", ["Total Revenue", "Ad Revenue", "IAP Revenue"])
     st.markdown("---")
     if not os.path.exists(REPORTS_DIR):
         st.error("Složka 'Reports/' neexistuje.")
         st.stop()
     experiment_ids = sorted([f for f in os.listdir(REPORTS_DIR) if os.path.isdir(os.path.join(REPORTS_DIR, f))])
     selected_experiment = st.selectbox("Vyber experiment ID:", experiment_ids)
+
 
 # --- Metadata z SRM ---
 exp_row = srm_df[srm_df["experiment_number"] == selected_experiment]
@@ -68,73 +71,57 @@ else:
 col1, col2, col3 = st.columns(3)
 col1.metric("👥 Počet uživatelů", f"{total_users:,}" if total_users else "—")
 variant_count = len(exp_row.iloc[0]["counts"].split(",")) if not exp_row.empty and "counts" in exp_row.columns else "—"
-col2.metric("🤜 Varianty", variant_count)
+col2.metric("🧫 Varianty", variant_count)
 col3.metric("🕒 Doba trvání", f"{duration} dní" if duration else "—")
 
 st.markdown("---")
 
-# --- Načtení dat a výsledných metrik ---
+# --- Načtení dat a agregace ---
+data = []
+cumulative_by_day = []
 experiment_path = os.path.join(REPORTS_DIR, selected_experiment)
-data = None
+
 if os.path.exists(experiment_path):
-    files = [f for f in os.listdir(experiment_path) if f.endswith(".csv")]
-    dfs = []
-    for f in files:
-        path = os.path.join(experiment_path, f)
-        try:
-            df = pd.read_csv(path)
-            dfs.append(df)
-        except Exception as e:
-            st.warning(f"Přeskočeno {f}: {e}")
-    if dfs:
-        data = pd.concat(dfs, ignore_index=True).fillna(0)
-        if 'total_revenue' not in data.columns:
-            data['total_revenue'] = data['total_ad_revenue'] + data['total_iap_revenue']
+    files = sorted([f for f in os.listdir(experiment_path) if f.endswith(".csv")])
+    for d_index, f in enumerate(files):
+        df = pd.read_csv(os.path.join(experiment_path, f)).fillna(0)
+        df["den"] = d_index
+        if "total_revenue" not in df.columns:
+            df["total_revenue"] = df.get("total_ad_revenue", 0) + df.get("total_iap_revenue", 0)
+        cumulative_by_day.append(df[["experiment_group", "total_revenue", "den"]])
+        data.append(df)
 else:
     st.warning("Data pro tento experiment nejsou dostupná.")
 
-# --- Reálný graf: Cumulative Ad Revenue per User ---
-# --- Cumulative Ad Revenue Chart ---
-st.subheader("📈 Cumulative Ad Revenue Per User")
-
-# Najdi denní sloupce jako AdRev_D0, AdRev_D1, ...
-ad_columns = [col for col in data.columns if col.startswith("AdRev_D")]
-if not ad_columns:
-    st.warning("Nenalezeny žádné sloupce AdRev_D0, AdRev_D1, ... ve vstupních souborech.")
-else:
-    # Seřazení podle dne (AdRev_D0, AdRev_D1, ...)
-    ad_columns = sorted(ad_columns, key=lambda x: int(x.split("_D")[-1]))
-
-    # Spočítej průměrné hodnoty po dnech a variantách
-    cumulative = (
-        data.groupby("experiment_group")[ad_columns]
-        .mean()
-        .cumsum(axis=1)
-        .reset_index()
-        .melt(id_vars="experiment_group", var_name="den", value_name="cumulative_adrev_per_user")
-    )
-
-    # Očisti název dne pro osu X
-    cumulative["den"] = cumulative["den"].str.extract(r"(\d+)").astype(int)
+# --- Graf kumulativního total revenue ---
+if cumulative_by_day:
+    full_daily = pd.concat(cumulative_by_day, ignore_index=True)
+    full_daily.sort_values(by=["experiment_group", "den"], inplace=True)
+    full_daily["cumulative_total_revenue"] = full_daily.groupby("experiment_group")["total_revenue"].cumsum()
 
     fig = px.line(
-        cumulative,
+        full_daily,
         x="den",
-        y="cumulative_adrev_per_user",
+        y="cumulative_total_revenue",
         color="experiment_group",
         labels={
             "den": "Den",
-            "cumulative_adrev_per_user": "Cumulative Ad Revenue / User",
+            "cumulative_total_revenue": "Cumulative Total Revenue",
             "experiment_group": "Varianta"
         },
-        height=400
+        height=450
     )
+    st.subheader("📈 Cumulative Total Revenue by Variant")
     st.plotly_chart(fig, use_container_width=True)
 
-# --- Tabulka variant ---
-if data is not None:
+# --- Souhrnná tabulka variant ---
+if data:
+    full_data = pd.concat(data, ignore_index=True).fillna(0)
+    if 'total_revenue' not in full_data.columns:
+        full_data['total_revenue'] = full_data.get("total_ad_revenue", 0) + full_data.get("total_iap_revenue", 0)
+
     st.subheader("📋 Souhrnná tabulka variant")
-    summary = data.groupby("experiment_group").agg(
+    summary = full_data.groupby("experiment_group").agg(
         Users=('user_pseudo_id', 'nunique'),
         Total_Revenue=('total_revenue', 'sum'),
         Revenue_per_User=('total_revenue', 'mean'),
@@ -146,12 +133,12 @@ if data is not None:
         lambda x: "0.00%" if x == baseline_mean else f"{((x - baseline_mean) / baseline_mean) * 100:+.2f}%")
 
     p_values = []
-    baseline_data = data[data["experiment_group"] == baseline_group]["total_revenue"]
+    baseline_data = full_data[full_data["experiment_group"] == baseline_group]["total_revenue"]
     for group in summary.index:
         if group == baseline_group:
             p_values.append("—")
         else:
-            test_data = data[data["experiment_group"] == group]["total_revenue"]
+            test_data = full_data[full_data["experiment_group"] == group]["total_revenue"]
             _, p = ttest_ind(baseline_data, test_data, equal_var=False)
             p_values.append(f"{p:.2f}" if p >= 0.0001 else "<0.0001")
     summary["P-value"] = p_values
