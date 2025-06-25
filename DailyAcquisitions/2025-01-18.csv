@@ -1,0 +1,1226 @@
+user_pseudo_id,experiment_number,experiment_group,name,medium,country,mobile_model_name,operating_system_version
+041ba967f9df285b91f2f489aa99d8ff,,,(direct),(none),United States,,Android 11
+09d83a87383e514027712cba4d99024a,,,,organic,United States,,Android 8.1.0
+110b40f2b56b694b74037ccb46a575e0,,,,organic,Russia,,Android 13
+144ca1b942888de62bb4b0ea44816322,,,,organic,United States,,Android 13
+14aa7e5038c845274f18a2143367db4c,,,HEX (GA) - T1 #hybridROAS,cpc,Japan,,Android 14
+19a0720b28e1c789e49fc4bafed42937,,,(direct),(none),United States,,Android 11
+19d206b326f8086c651993405ddaa3d4,,,,organic,Poland,,Android 13
+20355819c2447d99f5fe0abdabcef4d4,,,(direct),(none),Canada,,Android 11
+226a3a0932e5c779e7609f0a99536db0,,,(direct),(none),United States,,Android 11
+2acb7b12535fa30ffb2f408bbd74794c,,,,organic,United Kingdom,,Android 12
+355d3ea894fc46bd19d395583859669e,,,,organic,United States,Google,Android 14
+38cc3d9b1d0f2948617819a738bf9222,,,,organic,Uruguay,Google,Android 14
+485a3f79ebf2b99315f8e965e370a140,,,,organic,United States,Google,Android 14
+499ac1b71818a88c8bf7d63c4bc5533f,,,HEX (GA) - Globe #adROAS,cpc,Poland,,Android 15
+6611c95a9dbefaf7c072c1e96a59312f,,,(direct),(none),United States,,Android 11
+7c3ed94c5cc8ce51bcbe40e333b49e01,,,HEX (GA) - Globe #adROAS,cpc,Netherlands,,Android 14
+86ccc9440f109731eb75906ec9489b87,,,,organic,Vietnam,,Android 11
+86d5741ee943040e68a1d873e53f3273,,,,organic,United Kingdom,,Android 9
+881280da0c8708e75e38a8368b1ada5a,,,,organic,India,,Android 14
+9d75f35cc86a5566762ff77562ba89be,,,,organic,Indonesia,Google,Android 14
+a76951926c254cb04e28891a72f45aab,,,,organic,France,,Android 12
+ae56a33b9240070ecf520dd2895e46d3,,,HEX (GA) - Globe #adROAS,cpc,Australia,,Android 14
+b3d7a5a8d25a0c573c7732cbe847a8f5,,,HEX (GA) - Globe #adROAS,cpc,Canada,,Android 12
+c2464eae123ffc29ea0bd37f81fa816b,,,HEX (GA) - Globe #adROAS,cpc,France,,Android 14
+c745c538947b0683ca46faad2337bab9,,,,organic,United States,,Android 13
+cd4d3a4207fccc760fd205c56ee3e4db,,,,organic,Russia,,Android 15
+cdc631737afc8d7b558683d59d95ed77,,,,organic,Japan,,Android 14
+cdda8514bd4b522594ed60ecc83bbc74,,,(direct),(none),United States,,Android 11
+db9079170455f35115a92f578a7015db,,,,organic,Ukraine,,Android 14
+dbaf341abc93e62ed696a6a70be33df3,,,,organic,Italy,Google,Android 14
+dc142017c184d4544710c3596a870098,,,HEX (GA) - Globe #adROAS,cpc,Portugal,,Android 14
+f8cd56554877ff08d1db475648628096,,,,organic,Japan,,Android 14
+fdf02e9c2932104d4f5c522d0ec4a20f,,,(direct),(none),United States,,Android 11
+9292bc772f127da80aa50f03ec8fcbfa,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,IIIF150,Android 12
+9203b2bc01c591e3b0ece41b76b7ac65,,,HEX (GA) - Globe #adROAS,cpc,Kazakhstan,Cube,Android 13
+01d3590665f273b5b7c7a41bd0c2e32a,,,,organic,Spain,Cube,Android 14
+62a241c40f8e4723dc3e23e1a71fb120,,,,organic,Brazil,Nokia,Android 12
+afa1993c1b5111a6038f9cc5ac0c55db,,,,organic,Russia,Tecno,Android 14
+3edc429ddaa5a76621f81fb199e8ffff,,,,organic,Ecuador,Tecno,Android 12
+ae875a1b3fbba69b1eec1c3a1cae1620,,,HEX (GA) - Globe #adROAS,cpc,Saudi Arabia,Tecno,Android 12
+0f07d3c90234153e5a44801873657236,,,,organic,Russia,Tecno,Android 13
+d4bf5a43e829350b5637d8bd9903bfbd,,,HEX (GA) - Globe #adROAS,cpc,Thailand,Tecno,Android 13
+ed57264ccc7b0e34b0a3f91966a6710c,,,,organic,Russia,Tecno,Android 14
+907c122d486e99d25f58f91bbabe5182,,,,cpc,France,Fairphone,Android 13
+0e411c2055c6287a9febf267087c053d,,,,organic,Venezuela,Tecno,Android 13
+8f5dfffbdcb03a0804aadfb62f26f0f9,,,,organic,Russia,Tecno,Android 13
+e2a35e032dc2af6e65b3ec2e6fed8590,,,HEX (GA) - Globe #adROAS,cpc,Germany,Tecno,Android 13
+08019b16f3f93a1af3801fe7b1cf67e4,,,,organic,Russia,Tecno,Android 13
+d8b42b75f40ef45f3cf85796a321fa05,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Tecno,Android 13
+15b88f93237c438fca63fe4c9c81dafa,,,,organic,Russia,Tecno,Android 14
+b5489a42e65afbedc0425c9c9a30fde0,,,HEX (GA) - Globe #adROAS,cpc,Russia,Tecno,Android 14
+04b9c0643838e347c60eeaa4545e495a,,,,organic,Russia,Tecno,Android 14
+933d6c449eb65c7e3476e67e9d4db956,,,,organic,Russia,Tecno,Android 14
+a54995cae08f6a5ef0f885e1109896b6,,,,organic,Russia,Tecno,Android 14
+e94a2aa76a82ab106d308db6e844a17a,,,,organic,Ukraine,Tecno,Android 14
+9a99fb01ce9c402fb4f605fdc29f6857,,,,organic,Ukraine,Tecno,Android 14
+aba232ae803288d6388c0337d6ac6561,,,,organic,Russia,Tecno,Android 14
+c9e5c2e9eb4908e0e555e0022e773e17,,,,organic,Ukraine,Tecno,Android 14
+f39652115cd0379843b9e6c4312af72d,,,HEX (GA) - Globe #adROAS,cpc,Uzbekistan,Tecno,Android 14
+7ad1285e7be769d250ce51ab4f06a46e,,,(direct),(none),Russia,Tecno,Android 14
+8870f5a8d23b4b76665994aa4b402bbd,,,,organic,Russia,Tecno,Android 14
+48bda9747d3d66cf33a1e38f960aa0b4,,,(direct),(none),United States,BLU,Android 12
+927cbfafe3fbaefacc461dddc05f88da,,,,cpc,Poland,Oukitel,Android 11
+91194a33598b397239ae1a122107d4a3,,,,organic,Bangladesh,ZOJI,Android 11
+60c8cb7b42d678d968c6f91d488029fa,,,,organic,India,Vivo,Android 9
+89679ad08be58b7e0efa653570bb8248,,,,organic,Indonesia,Vivo,Android 10
+987c80e30383142134800f4b53be50f9,,,,cpc,Germany,ZTE,Android 13
+9fa6237b7ca3409dfb3124bd1e266fd1,,,(direct),(none),Mexico,ZTE,Android 13
+4864bddd382dce320d71b3c1099d3186,,,,organic,Colombia,ZTE,Android 13
+4dc30ccd369f626e98081c695b584c1a,,,,organic,Germany,ZTE,Android 13
+89baa311e73a31824179f302ae7b509f,,,,organic,Russia,Nothing,Android 14
+4a24f3a6bebb58d06eb1d27a5cfce05e,,,,cpc,France,Nothing,Android 15
+a50a7e8b70443485cc2fb9498900a6d3,,,,organic,Gambia,Nothing,Android 15
+e536db3cf0dd37d7e7d976789cf60e19,,,,organic,Russia,Tecno,Android 13
+ab30a859ecbb36a8c031e3054fd8d5f2,,,HEX (GA) - US #hybridROAS,cpc,United States,Vortex,Android 13
+edf4c7a6fcf2a33da1e15cecf4c0a463,,,HEX (GA) - Globe #adROAS,cpc,Russia,Tecno,Android 13
+a46e514f4fe73996263a06a6f7d38884,,,,cpc,Russia,Tecno,Android 14
+3f6eafa613af5f09d6508b5d2a06ce68,,,,organic,Russia,Tecno,Android 11
+09968c4b941531da1248ec6c34e27ce7,,,,organic,Brazil,Tecno,Android 11
+080609c898f4f2eb602338aacda002f7,,,HEX (GA) - T1 #hybridROAS,cpc,Russia,Tecno,Android 12
+e5affb1d09b80804c5fac5be32acdd25,,,,organic,Russia,Tecno,Android 12
+0bf2704bf75010436588065090e79061,,,HEX (GA) - Globe #adROAS,cpc,Russia,Tecno,Android 13
+d0dc8d0dc24f4a43adce87f0aaf550b1,,,,organic,Russia,Tecno,Android 13
+525962f8c81a4b904bf584aff837cf19,,,,organic,Russia,Tecno,Android 14
+73cc80721788af480269d8b67e68e46b,,,,organic,Russia,Tecno,Android 14
+eb65b0e1fd27c7167d4ffd0a61d24571,,,,organic,Russia,Tecno,Android 14
+8231755f5c3e9d2d13d3e9bac7531cc3,,,,organic,Russia,Tecno,Android 14
+66d672d340a202490cf01738a27d7f6a,,,,organic,Japan,Teclast,Android 14
+bcf5a76bc4f56635d96bae55c4fc51f4,,,HEX (GA) - US #hybridROAS,cpc,United States,Vortex,Android 14
+65a14ec564efcb770de0f5e610086905,,,,organic,Chile,DOOGEE,Android 14
+FAD43A0C5E544F02918D96DA1FC87051,,,(direct),(none),Germany,Apple,iOS 18.2.1
+9ff1c60d983e92ea071fdbdea1bace12,,,,organic,Türkiye,Sony,Android 8.0.0
+62949aec2a387f4607774888c7202b85,,,,organic,India,Vivo,Android 14
+0de8cfa69f0801d1f8b17ec48de8373f,,,HEX (GA) - Globe #adROAS,cpc,Russia,Xiaomi,Android 10
+b8044c2c6d8bcd4c5f57604e1b101a1d,,,,organic,Russia,Xiaomi,Android 11
+9992c2bd57d4b9775cedd72dc747651d,,,,organic,United States,Razer,Android 9
+24628e018857ec0aa79fad866fd6a032,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,IIIF150,Android 11
+99c384254999c6ed4415c9d57bdcad5e,,,(direct),(none),Japan,Samsung,Android 9
+618fe39d2579254be1ccd79754e57490,,,HEX (GA) - T1 #hybridROAS,cpc,Japan,Sharp,Android 13
+4b17dfb430fab453516da8b488cf0608,,,HEX (GA) - US #hybridROAS,cpc,United States,TCL,Android 12
+de3ad5c2266d1bb75eb43a91145bba43,,,,organic,Vietnam,Vivo,Android 12
+2c7501262f8ec138d73ba8c78a744326,,,HEX (GA) - Globe #adROAS,cpc,Russia,Vivo,Android 12
+80bf317aa968f2c2c3cc7b37f9012f47,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Vivo,Android 12
+5704e52c2d4feb3a5dbf4a42cdc4f05a,,,(direct),(none),Jordan,Vivo,Android 13
+118945f95b52523520574f7b3eaabb0a,,,,organic,Thailand,Vivo,Android 14
+45e8724586b0038bb4028434f81247f8,,,,organic,Russia,Vivo,Android 14
+99f2d23534a9af3de88eae9e28017917,,,,organic,Russia,Vivo,Android 14
+95e5e245c7afe424acfa46b7ffc87611,,,,organic,India,Vivo,Android 14
+3f81833f09255199262ca649c4963379,,,,organic,Russia,Vivo,Android 14
+83fa5382e58d67b69dabb7790644aba6,,,,organic,Russia,Vivo,Android 13
+666b3540286000cee8fec9ba222cd70a,,,(direct),(none),Malaysia,Vivo,Android 14
+8a07b338525473425ebce37911e20453,,,,organic,Philippines,Vivo,Android 14
+cf9a2bcf87558dcd96c495fe2aec6a72,,,HEX (GA) - Globe #adROAS,cpc,Philippines,Vivo,Android 14
+20c47a0737aea5c2a2cef09c5693d64b,,,,organic,Pakistan,Infinix,Android 9
+7849165fb1feb9afa10384cccdd56873,,,,organic,Indonesia,Infinix,Android 11
+adb2f77e8e31a836f923b4de2122d475,,,,organic,Philippines,Infinix,Android 12
+b2bb65612769666eace79b34a7e7cafa,,,,organic,Russia,Infinix,Android 14
+4fed07308ce58a844f4b3798ab822c56,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Infinix,Android 13
+1b57263204462addb57a585d5dc492e6,,,,organic,Austria,Infinix,Android 14
+5098bf08011640221808cc813a3fc361,,,,organic,Austria,Infinix,Android 14
+5098bf08011640221808cc813a3fc361,,,,organic,Austria,Infinix,Android 14
+62ddb96fa9a232c9bb12dc523bc788a9,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Infinix,Android 14
+fbabaf15b9d351209518e3048e630af4,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Infinix,Android 13
+e58b466b73d091412b88b8afc80ecbe6,,,,organic,Russia,Infinix,Android 13
+0634d68b7fe8cd65fbe3cf973edde069,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Infinix,Android 14
+507085827993da788ba4504a269d3e13,,,,organic,Russia,Infinix,Android 14
+c38ff0206cdb0e27474fcb8022e61d58,,,,organic,Russia,Infinix,Android 14
+67c9bcdbe80b2285243146b56139139f,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Asus,Android 9
+57f5e1cab4266d905176a0c7a0ee39eb,,,,organic,Russia,ZTE,Android 9
+9389d74710f0581ca44fb9c55a34c8dd,,,HEX (GA) - Globe #adROAS,cpc,Japan,ZTE,Android 12
+3145f4300ff4b57fd145192b7fe94ff3,,,,organic,Japan,Sharp,Android 14
+29a2cfc3035b4c8f730f1fc21d33c17a,,,HEX (GA) - Globe #adROAS,cpc,Japan,Xiaomi,Android 14
+611a6d3e3cc9cbd0d8c99dfe6ebb8e38,,,HEX (GA) - US #hybridROAS,cpc,United States,OnePlus,Android 12
+68cd8485f7cf2b9d21a07fc265811b21,,,HEX (GA) - US #hybridROAS,cpc,United States,OnePlus,Android 12
+7135bc575130a97ed9b04eb93dd665b8,,,,organic,Ireland,Nokia,Android 14
+faeb4d713ce0c2d525eaed3657fac2e3,,,,cpc,Belgium,OnePlus,Android 13
+c7f90b06e385118b1d28831d8a0415cd,,,HEX (GA) - US #hybridROAS,cpc,United States,OnePlus,Android 14
+db54c9d8e498eb018f30fc8c66446eed,,,HEX (GA) - US #hybridROAS,cpc,United States,OnePlus,Android 14
+61eb16e51ed228dab322ce1ac5e1fdc7,,,,organic,Japan,Amazon,Android 9
+92724caf4d858a8cc0aab07f60b5c9bb,,,,organic,Russia,OnePlus,Android 14
+7186b637eef35d5a4d14ad91f779cd75,,,,organic,Italy,OnePlus,Android 14
+666b23b66778a648ac653ed601a295d6,,,HEX (GA) - Globe #adROAS,cpc,Russia,OnePlus,Android 13
+cb2f1dee1b5034d3a2ded9f2679cc432,,,HEX (GA) - Globe #adROAS,cpc,Japan,Samsung,Android 10
+dc754ab75abe964314be14c2ac9107dc,,,HEX (GA) - Globe #adROAS,cpc,Japan,Samsung,Android 14
+9dd9c6a180b665a12c7774a9f78b892b,,,HEX (GA) - T1 #hybridROAS,cpc,Japan,Samsung,Android 14
+b3c90e3594a8f8921d15cdb41637c62f,,,,organic,Japan,Sharp,Android 10
+a52e5b625655c1487780538cf75170a8,,,,organic,Japan,Sharp,Android 14
+a3a7ccec65fa29ded9514893bc7f1e7c,,,(direct),(none),Japan,Sharp,Android 14
+7ff554c82ab5704f5b9870d7c3c13f93,,,HEX (GA) - T1 #hybridROAS,cpc,Japan,Sony,Android 8.0.0
+973674121b3cd81d3e1a1dda6a641087,,,HEX (GA) - Globe #adROAS,cpc,Japan,Sony,Android 13
+ed550a3d4e4cd6e3b756fd47da80a518,,,HEX (GA) - Globe #adROAS,cpc,Japan,Sony,Android 14
+01f86e5c3010a80e12b3156f06d6a4d4,,,HEX (GA) - Globe #adROAS,cpc,Japan,Sony,Android 14
+5bb546332825697c6b30118407dc087a,,,HEX (GA) - Globe #adROAS,cpc,Japan,Sony,Android 14
+ded3e65ff7b4260ea0b276325f9bd644,,,(direct),(none),United States,TCL,Android 12
+78196528b7df98a7e789a8f3a1b016ef,,,HEX (GA) - Globe #adROAS,cpc,United States,TCL,Android 13
+6595d73b1dd4c3675796fe1e4e0e63da,,,,organic,Pakistan,Infinix,Android 13
+f120e4312563800e78e1dff3e9c7c37b,,,,cpc,Poland,Infinix,Android 13
+2f839474502a79fcdd4f14856051a251,,,,organic,Russia,Infinix,Android 14
+2e29da387d3747910d9ad7bc94709716,,,,organic,Russia,Infinix,Android 14
+7ed3693f3ac73013755e2f9dd77c8913,,,,organic,Germany,Infinix,Android 14
+adc672f45b7d474a6ab393b2848e3bbe,,,,organic,Russia,Infinix,Android 14
+4AF9372E5F584E478915BA7AF23446FB,,,(direct),(none),United States,Apple,iOS 18.1.1
+80E20381F89749A6A703A3D0D8CF19F1,,,(direct),(none),United States,Apple,iOS 18.1
+9C80F6E561E0415D886B7DB5FE19DC31,,,(direct),(none),Puerto Rico,Apple,iOS 18.2.1
+9EDA58139BE34675BB5FF54BF5EABA3C,,,(direct),(none),United States,Apple,iOS 18.1.1
+A6F2F4BE711942F186AC462F0EF30221,,,(direct),(none),France,Apple,iOS 18.0.1
+AE1E5538BEBE4778897579B606CA2FA1,,,(direct),(none),Italy,Apple,iOS 18.2.1
+B618E9697E574C08AF12040742709AFC,,,(direct),(none),United States,Apple,iOS 18.1.1
+E01EBB48A0F54B30BAD114B99AFBF92E,,,(direct),(none),France,Apple,iOS 18.1.1
+E03D7398C8DD4113906D8D1BD4436AA4,,,(direct),(none),Belarus,Apple,iOS 18.1.1
+F23D81A05D3B4322A734C33BBD17BE2E,,,(direct),(none),United States,Apple,iOS 18.1.1
+e7a8fecb1ea4a979eb3199baddb2afa8,,,,organic,France,Honor,Android 14
+3a697cd5807180d835fe9a05413b7d3f,,,,organic,France,Huawei,Android 9
+b848850cd5f142991d962365fed7d2ed,,,,organic,Spain,Honor,Android 13
+ffde87f5df90f68297c9a755dea00d0b,,,HEX (GA) - US #hybridROAS,cpc,United States,BLU,Android 12
+4bcca1fd0faafaf526055958d4b0495d,,,(direct),(none),Poland,Honor,Android 15
+0d27744aae9d30bd478851f38197151d,,,,organic,Russia,Honor,Android 14
+8cf95d89d386b8dc8ac31d9e95b9cc07,,,HEX (GA) - Globe #adROAS,cpc,France,Honor,Android 14
+2d02b00bb2a069393b8b198c64cfcba4,,,,organic,Russia,Honor,Android 13
+5dc8fa4c40fd726f274f803848dd0449,,,,organic,Russia,Honor,Android 13
+eac5745772aa131dfb9d9ba96fb583a6,,,,organic,Russia,Huawei,Android 10
+835ac7752685272a66093f8efb6e8df8,,,,organic,Philippines,OPPO,Android 10
+bc1eea006ce7e129ff31831511be4915,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,OPPO,Android 10
+a9e1192e80d25195565ee0146e33657f,,,HEX (GA) - Globe #adROAS,cpc,Kazakhstan,OPPO,Android 10
+78283bf491e2c96745b9d02b5aeded80,,,HEX (GA) - Globe #adROAS,cpc,Spain,OPPO,Android 12
+79a1a524c1c0051fedfdfff9f830b1fc,,,,organic,India,OPPO,Android 9
+d648c44943901165768f7849fa9cc640,,,,organic,Philippines,OPPO,Android 9
+f53a6f1e57ca2c46a091b92d876f5891,,,,organic,Philippines,OPPO,Android 9
+bde014a1602479c44ef0618c35f2cd52,,,HEX (GA) - Globe #adROAS,cpc,Netherlands,OPPO,Android 12
+56cd3775734d2058f12c6aede0a9ad93,,,,organic,Thailand,OPPO,Android 12
+a79908db1bf312e84fe5048855b3e3b0,,,HEX (GA) - Globe #adROAS,cpc,Thailand,OPPO,Android 13
+bc745582fea208b2811fb229e940c3f6,,,,organic,Spain,OPPO,Android 13
+30fbbf8066b1c32aac1086bff2814929,,,,organic,Russia,OPPO,Android 13
+6afd2aa36d5f17e55c181b2ba39d61f6,,,,organic,Russia,OPPO,Android 13
+ba1c68cc2d55c679295fac7183e9e849,,,,organic,Vietnam,OPPO,Android 13
+a64e0640aa4a2ff88563499bcf829c5b,,,,organic,Japan,OPPO,Android 14
+29983617f5477ab6fa8e10fb83fdc37d,,,,organic,Russia,OPPO,Android 14
+91f71970b23e9265745247fe0f4d511e,,,,organic,Ukraine,OPPO,Android 14
+bbc98c13b8e9098d8422519b4cba1311,,,,organic,Serbia,OPPO,Android 14
+bce1c19ccbb8c26bc416ce6bab8f0935,,,,organic,Colombia,OPPO,Android 14
+c49f5287851aa44a1d301baa1ec17ced,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,OPPO,Android 14
+4928b5dc151ed4a2ac8bb2b6e193098e,,,,organic,Switzerland,OnePlus,Android 15
+76cd83e327420c612b46c4e97bee69df,,,,organic,Poland,OnePlus,Android 15
+e3dd37ab8739b0001b2e71545012b8c6,,,,organic,Poland,OnePlus,Android 15
+ee0cc6b6440405a25a3e37f8d2287729,,,,organic,Poland,OnePlus,Android 15
+5f04f3bc0ee8460dc27dc741412a1756,,,HEX (GA) - Globe #adROAS,cpc,Philippines,OPPO,Android 14
+f4ba923e705617421efa9b05093e8d99,,,,organic,Japan,OPPO,Android 14
+944749c33ffd22039191fed992df5bac,,,,organic,India,OPPO,Android 14
+362b17b61e664b102e8e539e0912955f,,,HEX (GA) - T1 #hybridROAS,cpc,Germany,Honor,Android 14
+9cbd62e7ed02d586c35aae5eab7a9f13,,,HEX (GA) - Globe #adROAS,cpc,Costa Rica,Honor,Android 14
+61ce8f03a4038708ff18dd86f5c224f2,,,,organic,Romania,Honor,Android 14
+9fc5e56269e4ae1bffd31c419af42048,,,,organic,France,Crosscall,Android 11
+170262b3cc0db8c4e7902fc0b11fd2de,,,,organic,France,Crosscall,Android 10
+fac1101bd414d9e4bf780aef159f12d6,,,,organic,Germany,Huawei,Android 10
+67250138c242ff116abe0b3842ee68aa,,,,organic,Russia,Honor,Android 13
+ea47602c4a5b525c84ed93888a932878,,,,organic,Türkiye,Honor,Android 13
+a3a12ef430898396a17852d8033e09c4,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Honor,Android 14
+14d812fb1118056541e187009a6e116f,,,HEX (GA) - Globe #adROAS,cpc,Germany,Huawei,Android 7.0
+b1f7b8ee883672083af81165bb4b2bbf,,,,organic,Malaysia,Huawei,Android 10
+0007e8edcf79c7b7f5aba1d505a97b85,,,,organic,Russia,Huawei,Android 10
+acbb4011c55c143d48f9760b1b13abc2,,,,organic,Egypt,Huawei,Android 9
+bc36041cb26d0e0d00f53ab1fcab6cd1,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Huawei,Android 10
+f131f801f3b4403c5a3fd29fb1ecdbd4,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Huawei,Android 10
+5581fdaee272fa6fe7e79446724ac7ec,,,,organic,Italy,Honor,Android 14
+b9f8d2e020d657e718bb1a1a40a99bd5,,,(direct),(none),Poland,Honor,Android 14
+ceb8bb70321567b0af054339783ff29d,,,,organic,Russia,Honor,Android 14
+2105454a036e7ee609742e43803bd362,,,,organic,Poland,LG,Android 9
+6dc89f39d64c2a69de0e90c98ae22950,,,HEX (GA) - US #hybridROAS,cpc,United States,LG,Android 13
+68eec18ef3fc260fa7b6b757dbaf2851,,,HEX (GA) - Globe #adROAS,cpc,Austria,Huawei,Android 10
+a6762e8b5e50eba3ad56bb9b32e021a6,,,,organic,Thailand,Huawei,Android 10
+1d96cedcd795ff4adaf3e97231f4ac96,,,,organic,Russia,Honor,Android 13
+3c624e16389af43f46023cdf0c22aee0,,,,organic,Russia,Honor,Android 13
+0d4d1e048177889c688af7cf0aabd15f,,,,organic,Russia,Honor,Android 13
+da0622c5eba9deb8a391b0b92a583201,,,(direct),(none),Russia,Honor,Android 13
+03a88d90d08b11386df934324606b0c6,,,,organic,Netherlands,OnePlus,Android 15
+608e85b1f8d995f4e6624e060f3dafa0,,,,organic,Ireland,Huawei,Android 10
+b1c26b794fc3068bef72e6fb4f6397d4,,,,organic,Colombia,Huawei,Android 10
+d81cada6ccd7df117c67356b6bee4292,,,,organic,United States,Google,Android 14
+0c299d0d73087db640f69aaca1e3ca97,,,HEX (GA) - US #hybridROAS,cpc,United States,Google,Android 15
+7499193160ce9b57c41111701e7f5cc2,,,,organic,Kazakhstan,Google,Android 14
+844f33c0ddc938531966785a7f975bca,,,,organic,Colombia,Google,Android 15
+a43fff15a5d5b79ef72ed0ce5f54b52f,,,,organic,Canada,Google,Android 15
+09d1f9a575f66ec4324d0698716d461b,,,,organic,Italy,Google,Android 15
+308487cbe3ecdf511a8763d6d9eb5f86,,,,organic,United States,Google,Android 15
+48a502dbd8193086d9de51a8b236ddc6,,,HEX (GA) - Globe #adROAS,cpc,Germany,Google,Android 15
+5beec076f7418c1a87d48499069e1a5e,,,,organic,Belgium,Google,Android 15
+a87dd0d975aa2dd36154c6fd097dbb0b,,,,organic,Netherlands,Google,Android 15
+f0870100cc90ffdc58807b751f7e9d95,,,,cpc,Germany,Google,Android 15
+ffa83886142905112b6be020351d3636,,,HEX (GA) - US #hybridROAS,cpc,United States,Google,Android 15
+12d0ae2da5de1bb93c777c94cd0767aa,,,,organic,United States,Google,Android 15
+25876f59d53a0c4d8c92331cdde8e309,,,,organic,United States,Google,Android 15
+df68cc98e790030f28f376067a8a8bb2,,,,organic,Bangladesh,Honor,Android 14
+50373b304797b6ecdd6a0b24667195d7,,,,organic,Russia,Honor,Android 14
+9aad9aea8b2fcd504dfe96f918ffab47,,,,organic,Russia,Honor,Android 14
+da48ee56a583fab9683156689a15395e,,,,organic,Belarus,Honor,Android 14
+f4a9f005d4cdb49fa8e8a36a115e0431,,,,organic,Russia,Honor,Android 14
+a5ecff8e7b2b4569cb2affe1e3c38f1f,,,,organic,Poland,Honor,Android 14
+16d424cec320257fbef773fca4976db4,,,,organic,Peru,Honor,Android 14
+27abbe1114dbe2d644e1190e337c288c,,,HEX (GA) - Globe #adROAS,cpc,Malaysia,Honor,Android 13
+4354df4aadc892db0b3380f73f9b1023,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Realme,Android 11
+41a4436140b29ec6b4c8fb9858294e13,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Realme,Android 11
+dca7bfc4b4d98c65ed02ac020bf9f6b0,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Realme,Android 11
+d17aec372f8c0506a908becfe43d815b,,,,organic,Belarus,Realme,Android 11
+e32b50301587374f2eed5ba81cb3c628,,,(direct),(none),Russia,Realme,Android 11
+0ee1fc141d1f66df285563319697e490,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Realme,Android 11
+7d15aaa121517ea534a51f09a4fbb36f,,,,organic,Russia,Realme,Android 12
+764c1ebaadd3e8d842983cd59fc71aa5,,,,organic,Russia,Realme,Android 12
+925d53e5f99bcc740fb0b944fb26d318,,,,organic,Malaysia,Realme,Android 12
+f667cde082e01011b43adccb22a7604f,,,HEX (GA) - Globe #adROAS,cpc,Russia,Realme,Android 12
+31665202f104c9ab3c37d6881b72defe,,,,organic,Russia,Realme,Android 12
+073baa6cc21671f16768da82abcf45ff,,,(direct),(none),France,Realme,Android 12
+3b4ba1fcfdc2f14172d721b23b57d5cf,,,,organic,Russia,Realme,Android 13
+5d5415b28c69cb51e0ff72994c361c26,,,,organic,Russia,Realme,Android 12
+6b31e90dcae23a5bd7f1fe3167a73a89,,,HEX (GA) - Globe #adROAS,cpc,Georgia,Realme,Android 13
+ccce9b3f0d7de2bf42c30265a1cf2853,,,,organic,Russia,Realme,Android 13
+99b11994d276335fd451a08399a7d215,,,,organic,Russia,Realme,Android 13
+d1095f881ce5bbf9a38ae2b0c4f69aba,,,,organic,Russia,Realme,Android 12
+7d42f720b337b34ca46cbea568d31998,,,,organic,Russia,Realme,Android 11
+cf49b93b0274dacc4323f4f8dc88faa3,,,(direct),(none),India,Realme,Android 13
+ae747e3e9d01a74e00f207b867f110cb,,,,organic,Algeria,Realme,Android 11
+0bfa5d26864b31c8e5adf11eba89945f,,,HEX (GA) - Globe #adROAS,cpc,Egypt,Realme,Android 11
+7cdfb37edd2c9df1a9950a9ea12eaeb2,,,,organic,Russia,Realme,Android 11
+bf9d253832da05c5103db5eb3bb4fe56,,,,organic,Russia,Realme,Android 11
+3abca864e1ddbdf1254c7b0999cd9da1,,,,organic,Russia,Realme,Android 13
+9e06fe8ae4d9c1bd24486aa2359c2628,,,,organic,Poland,Realme,Android 14
+93346308cb0bfedbd3af598ae3eb2902,,,,organic,Russia,Realme,Android 13
+d4c753ab6399897fa56380248787ea3f,,,,organic,Russia,Realme,Android 13
+5517736bff67910f72e427b43a2e8ab5,,,,organic,Russia,Realme,Android 13
+614bfefd37c893d60676dc3beb0cc8fb,,,,organic,Russia,Realme,Android 13
+e97d8c81fc4226e92624f41439e858ae,,,,organic,Russia,Realme,Android 14
+e40dd06207acea038fd6acb1f749ddc2,,,,organic,Poland,Realme,Android 13
+f07dbe2a1317fffe670078dc359f29e4,,,,organic,Philippines,Realme,Android 12
+4e27d9e2aa157c71131fb2884e59310c,,,,organic,Russia,Realme,Android 11
+d088f21fa1e735fcd8469c7d312d75e1,,,,organic,Russia,Realme,Android 11
+8eddd933eaaac229cbf30afc6b34e2a7,,,,organic,Russia,Realme,Android 14
+a1f422ad93470833770cb0fc1f79fcef,,,,organic,Bosnia & Herzegovina,Realme,Android 13
+235e765dfd99de7be6cd6e20c9f87994,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Realme,Android 14
+93c4fb8f319ebaf59d1b0b6ff9a02085,,,,organic,Russia,Realme,Android 14
+a8f52ef18def01d0e2ecde947eada2a4,,,HEX (GA) - Globe #adROAS,cpc,Poland,Realme,Android 14
+fa54d07d83cefc3b96eda35d5e443826,,,(direct),(none),India,Realme,Android 14
+7f529f2d224121dca30efd775493afe1,,,,organic,Jordan,Realme,Android 14
+8febfac15c4b4006cbb34b2be8b68ef8,,,,organic,Russia,Realme,Android 14
+bc5db853a04a9ac0307ed6433628934d,,,(direct),(none),Philippines,Realme,Android 14
+dbd2f4ed0bd923d8e6f4273abdfb607a,,,(direct),(none),Malaysia,Realme,Android 13
+d70843aadd985093b17b62da7f6fb786,,,,organic,India,Realme,Android 14
+2ff81b018cc17d20ea8cba4b34fb5542,,,(direct),(none),India,Realme,Android 14
+8f5d3af3e47087d364fff80e5dce2035,,,(direct),(none),India,Realme,Android 14
+cf45b71f09743829b594a41110515190,,,(direct),(none),India,Realme,Android 13
+e658dfbc7df509c304acc0bae9afdec4,,,(direct),(none),India,Realme,Android 13
+d23e7c039127cb0e37ed386cfc961b2d,,,,organic,Philippines,Realme,Android 14
+91b39e42f8075d502b9a02b364caca64,,,(direct),(none),India,Realme,Android 14
+bd8655caca72110dd5ae67d4ba519caf,,,(direct),(none),India,Realme,Android 14
+2e692b8cf7003e731ba60d5747cb80a4,,,,organic,Russia,Realme,Android 13
+d006d3df80f1c67dd8f66e2ec8bdd314,,,,organic,Russia,Realme,Android 13
+8c6fae72beb7f18e117087a464f30615,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Realme,Android 14
+322d99f7156e70fe45cb0bd8ccbff186,,,,organic,Russia,Realme,Android 14
+36e12dc6546eec44b989a4b9ec746651,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Realme,Android 14
+a0ab3cb24050e0ddcf7e1de4a971b3ef,,,(direct),(none),India,Realme,Android 14
+729f096dc3935d49b51a2193bbea3659,,,(direct),(none),India,Realme,Android 15
+284503aa883dc7d3c2cedce87c1444da,,,,organic,Russia,Xiaomi,Android 9
+e8fb1c8dbfbb015db1bb30a16eeaba5d,,,,organic,Ukraine,Xiaomi,Android 10
+ae66c336a8673a099b42fbe27932c35e,,,,organic,Russia,Xiaomi,Android 10
+cb1f6a3fc28d765884ae3f70a5c08f78,,,,organic,Russia,Xiaomi,Android 10
+a5fdca84a8cb5da85056fa27dc73d1eb,,,,organic,Switzerland,CAT,Android 11
+d036a217b38f9061ac118ad24e328910,,,,organic,Türkiye,Samsung,Android 13
+e1ff0ba9b7ee1ef84b8dd245915b0f35,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 13
+c5665138b2f5db673dca8aae211219cf,,,HEX (GA) - T1 #hybridROAS,cpc,Germany,Samsung,Android 14
+326e987d48ffbc830a509076bbb3cc0a,,,,organic,United Kingdom,Samsung,Android 14
+432464dfc17d91f8ba8094d53acaf187,,,,organic,United States,Samsung,Android 14
+ac1377188bf34667846e46d46ed6e70f,,,,organic,Ukraine,Samsung,Android 14
+b4eef016c79bd889ea9217494c7432ac,,,(direct),(none),Taiwan,Samsung,Android 14
+51ce35ae78f490309c418a7105d9ffba,,,,organic,Poland,Samsung,Android 14
+b79621b69b8b9e4e0be3dce691351e9c,,,(direct),(none),Egypt,Samsung,Android 12
+3f07d6317e3e2de64bc6b68f3fae6a01,,,,organic,Germany,Samsung,Android 10
+b8383d40a73ed6d0c98b105c146ba590,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Samsung,Android 11
+eda4266a411ed71305d226d6d7070065,,,,organic,South Korea,Samsung,Android 14
+f9282957937fc67e7b1f4e7f927e60f5,,,(direct),(none),Germany,Samsung,Android 13
+8970367285c1d114f04cf8b0f52133e0,,,,organic,Germany,Samsung,Android 13
+19cf0b6b8e9aab26ebeaa2cee0757949,,,HEX (GA) - Globe #adROAS,cpc,Croatia,Samsung,Android 14
+3faf790ae578d099b9003bf2ddcee5fc,,,,organic,Russia,Samsung,Android 14
+6977a2d4c457621bd716ecb6e074b0b2,,,,organic,Vietnam,Samsung,Android 14
+915fa1bf661672c4b2e4ecd562181ffa,,,,organic,Russia,Samsung,Android 14
+8aa403d788e18072aa5d0b10f6b73a4b,,,,organic,Netherlands,Samsung,Android 14
+d3ae47bc69e02811177b7c469f56b814,,,,organic,Türkiye,Samsung,Android 14
+d99610bd9c5de74ad61da631bdd8e9ee,,,,organic,Hong Kong,Samsung,Android 14
+37d1ac50beaaf0a97cd833f5c4ddf0be,,,,organic,Austria,Samsung,Android 14
+8ebe7cf06efac6622b0fdcfa1c390a62,,,(direct),(none),Austria,Samsung,Android 14
+af743a07bbdf413e2247416164427a46,,,,organic,Türkiye,Samsung,Android 14
+b8b70c927dfeb11cfdbabb91032d6cc7,,,HEX (GA) - T1 #hybridROAS,cpc,Canada,Samsung,Android 14
+90075e42d9a09ac3559626ea5007e71f,,,,organic,Thailand,Samsung,Android 14
+0c6449b54233ea64e8f4c7b445a6d5f9,,,(direct),(none),France,Samsung,Android 14
+4ccf95d4e740c2109308ae90fbcb3928,,,,cpc,Poland,Huawei,Android 10
+bee6ff48670747cfec15b62f726d9dd9,,,HEX (GA) - Globe #adROAS,cpc,Russia,Huawei,Android 9
+bee6ff48670747cfec15b62f726d9dd9,,,HEX (GA) - Globe #adROAS,cpc,Russia,Huawei,Android 9
+51575eb816d38e1662a5f079ad666c00,,,,organic,Belarus,Huawei,Android 10
+c91665202442211892717fa5ff5ff4a9,,,,organic,Russia,Huawei,Android 10
+7b98d8c62efc6653f2ad1d6d7c49c5e5,,,HEX (GA) - Globe #adROAS,cpc,Colombia,Huawei,Android 10
+356e1bdcc585875a1f6f6846f310b9e7,,,HEX (GA) - Globe #adROAS,cpc,Egypt,Lenovo,Android 13
+af014bdde9dfeff0805c47fe36da2a91,,,,organic,Austria,Lenovo,Android 14
+bfff1076deebc31eb5ec604e1b41ffc0,,,,organic,Germany,Lenovo,Android 14
+25dade33961cc39ff246943b722948fb,,,HEX (GA) - Globe #adROAS,cpc,Armenia,Honor,Android 13
+159a05b49227c4075a30b116c6d3e986,,,,organic,Germany,Huawei,Android 10
+aa3a31f723ea2370427f6a7f07566315,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Honor,Android 14
+932d8be74a476c98a8e9fe9b310abf60,,,HEX (GA) - Globe #adROAS,cpc,Netherlands,Sony,Android 13
+4361ef465f10b054c4cad8c593647fb4,,,HEX (GA) - Globe #adROAS,cpc,Czechia,Huawei,Android 10
+d25812a98b086ba2071d738d4f7da2e7,,,,organic,Russia,Huawei,Android 10
+b027518d296171d974ba751ebbc5be03,,,,organic,Russia,Asus,Android 12
+f753eb94431b41455f502be19a0f81a4,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 12
+9d71e8677438cae36f0e4834d5e527e6,,,,organic,Russia,Xiaomi,Android 14
+89d42c128f84ea63465cb6ae83afb47a,,,,organic,Australia,Asus,Android 14
+aaa9a5fb5de979826da684ff871ac2e5,,,,organic,Germany,Asus,Android 14
+f2b80896ec7dfee2d764823bf44d9241,,,HEX (GA) - Globe #adROAS,cpc,France,Asus,Android 14
+1b4240803f1c8d8186742ea5be3ddf5a,,,,organic,Russia,IIIF150,Android 12
+8296198012c5743d2735d4cbcb0f9376,,,,organic,Portugal,Ulefone,Android 14
+c34e54c1fcfa43e639cb19c7542f1a19,,,(direct),(none),China,Huawei,Android 10
+c34e54c1fcfa43e639cb19c7542f1a19,,,(direct),(none),China,Huawei,Android 10
+678213c3069df76cd31f9e47060c8308,,,,organic,Russia,Huawei,Android 10
+478c5bd59d73f9deb3270a2f22b5bc04,,,,organic,Ukraine,Huawei,Android 10
+5fba3eae6d9b952a7d5c035e1fba2537,,,,organic,Germany,Xiaomi,Android 12
+4032651efd7d5071c1fb9dc6dc418f2d,,,,organic,Russia,Xiaomi,Android 13
+7288787920e0afffc8853686b636e211,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 13
+95e7ae08651f57b6c0df432f6104d9eb,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 13
+a536bfe99eade0a948c3ba78b91ac848,,,,organic,Russia,Xiaomi,Android 13
+be0a81cec2d1a931314b1c293b78505c,,,,organic,Russia,Xiaomi,Android 12
+e93d555540f0d862481bc5dd49654b89,,,,organic,Türkiye,Xiaomi,Android 13
+f47f7b1d15053ed31b6f3ba58560d970,,,,organic,Russia,Xiaomi,Android 13
+fc1806aa4d72cfb83614eefff66cdbc4,,,HEX (GA) - Globe #adROAS,cpc,Moldova,Xiaomi,Android 13
+1e776cf0bd137aea26010e96c0ae1d69,,,,organic,Czechia,Huawei,Android 10
+95f81c24ece2d521635238849342977d,,,,organic,Czechia,Huawei,Android 10
+1414c7aa981e6ebf8a0e89a66362ce41,,,,organic,Russia,Huawei,Android 10
+3a07df368ff846d3784f0abb03756e5f,,,,organic,Russia,Huawei,Android 10
+f1cea58731bc0f7f60e65365ebca4024,,,,organic,Russia,Huawei,Android 10
+9b6edf27e1ba601c798b9b7e7e7245e7,,,,organic,Ukraine,Huawei,Android 10
+fc0555d7527e8927187f0e211492b05b,,,,organic,Russia,Huawei,Android 10
+67ab47796a5a38679f9724e77eb8314d,,,HEX (GA) - Globe #adROAS,cpc,Japan,Huawei,Android 9
+18843d12f7e10cebd02a2832f3fc366b,,,HEX (GA) - Globe #adROAS,cpc,Uruguay,Motorola,Android 12
+4fcad8dd68e4d62d61ca6aa3aabc9716,,,HEX (GA) - Globe #adROAS,cpc,Poland,Motorola,Android 11
+b14d64f5612383c08098190dc3fc8391,,,HEX (GA) - Globe #adROAS,cpc,Argentina,Motorola,Android 11
+0ba85b9da5dd0d111d1d9f3eeeb5f71f,,,,organic,Serbia,Motorola,Android 12
+1e408038adafa7c2a4602d07c0f3e1a7,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Motorola,Android 12
+3980ab33201923ac8240aa38e4c016fe,,,HEX (GA) - Globe #adROAS,cpc,Chile,Motorola,Android 12
+45f4a859f0cba7a523f7afa58d9cbebb,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Motorola,Android 12
+2139dd1ae0383d82c512335f27084f00,,,HEX (GA) - Globe #adROAS,cpc,Argentina,Motorola,Android 13
+fc926e70875413d20dab7305ffa3c091,,,,organic,Ukraine,Motorola,Android 13
+0fc014f639aa2c05f1858bf54dd59271,,,,organic,Indonesia,Motorola,Android 12
+1f5685eae5c74e5e62de0505210cd8ba,,,,organic,France,Google,Android 15
+b463d70949bc79a57c3c97d0695d3d31,,,HEX (GA) - US #hybridROAS,cpc,United States,Google,Android 14
+1312bf99771b77710ad653ef8cb58bf6,,,HEX (GA) - T1 #hybridROAS,cpc,Japan,Google,Android 15
+62defbf42129c96b123224654bfd01d1,,,,organic,Germany,Google,Android 15
+c9eca80ba3d64d80de7d423de71b3604,,,HEX (GA) - Globe #adROAS,cpc,United Kingdom,Google,Android 15
+de16428a46004139a7ec3e966f827998,,,HEX (GA) - Globe #adROAS,cpc,United Kingdom,Google,Android 14
+62c20165d10b14808670f0f01e427a4b,,,,organic,United States,Google,Android 15
+efd9df3c7677f59f373929f6568a4d26,,,,organic,United Kingdom,Google,Android 15
+ad322e1f3a3e14dece8e5becec61b4a2,,,,organic,United Kingdom,Samsung,Android 12
+0b70d21b43b6e1e3f449c5157bbb5f4d,,,,organic,Russia,Samsung,Android 13
+c8470d87646582ebad9187e6c6e4dc30,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Samsung,Android 13
+d0c0708ab1ed26f6427dc67889faead6,,,,organic,Sri Lanka,Samsung,Android 12
+1855ad7224add37b105005ab64303460,,,,organic,Russia,Samsung,Android 13
+96f3999a5a76e5722183c4dceac9afbb,,,HEX (GA) - Globe #adROAS,cpc,Kazakhstan,Samsung,Android 13
+7516e3236a887e136805cecd8e05ec2c,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Samsung,Android 13
+b2b1cb29f9f13d7bf9823e02ac0eeb30,,,,organic,Mexico,Samsung,Android 13
+d06f5c8833376048f3a3329280804af9,,,,organic,Spain,Samsung,Android 14
+1d0b3a0e44f393b59859f069d578457f,,,,organic,Mexico,Samsung,Android 13
+31980217d5dca575a3571940d2da80e1,,,,organic,Ukraine,Samsung,Android 14
+3649843598ba0d6e070adb1f42d73f0d,,,,organic,South Africa,Samsung,Android 14
+bbef882ebaf6e398db4b4689c8da32f5,,,HEX (GA) - Globe #adROAS,cpc,Argentina,Samsung,Android 14
+a0057a23eaebea0eedf74b077d946d41,,,,cpc,France,Samsung,Android 14
+d741e4bfb08b67c71a1be5d55fdf8f57,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Samsung,Android 14
+25263156762ee1bc8ed77cb6b8c08845,,,(direct),(none),Argentina,Samsung,Android 13
+e669822d5936f347cebdfd0b956585ab,,,,organic,Venezuela,Samsung,Android 14
+1ff89b33c67dd38ba3ea8465dc6ac02c,,,,organic,Russia,Samsung,Android 14
+4869ad45edb0a965ab9d50090cb9a71c,,,,organic,Australia,Samsung,Android 14
+f86a454be70f3a58699168772b41fc55,,,(direct),(none),Thailand,Samsung,Android 14
+11d0310f65137ab73166a3447695b5f0,,,,organic,Poland,Samsung,Android 14
+7a01165e2264ee0fa1fe7b03c5d6b6d5,,,,organic,Czechia,Samsung,Android 13
+8cc91be04e83768866076f2a3dfe5998,,,HEX (GA) - Globe #adROAS,cpc,France,Samsung,Android 14
+d81db2de34370a7d6c3c4f3ec63e8e53,,,,organic,Brazil,Samsung,Android 14
+322dbc9d6284323acc49c91cbb078703,,,,organic,Brazil,Samsung,Android 14
+3e1491d025a24fe84660371ddb0bdd86,,,,organic,Uzbekistan,Samsung,Android 14
+4dbf0d0e7b7b4afb8b7e0b7cefbf9dbb,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Samsung,Android 12
+7faeec8a45348b8b2cf7b9f7731280fa,,,,organic,Russia,Samsung,Android 12
+4f4dc42e3a821062c35978065d03d6f7,,,,organic,Brazil,Samsung,Android 12
+8f9dc3416533e097aeb0fbdfa0399880,,,,organic,Indonesia,Samsung,Android 13
+fcfa9ee64f9aba7c02bb8ca6f4abbe60,,,,organic,Russia,Samsung,Android 13
+a5506bd83c800d1652e88744f0ffcb7c,,,,organic,Cambodia,Samsung,Android 14
+7ebfca2401671f967dd77924db766c9a,,,(direct),(none),United States,Samsung,Android 13
+08b875bbfcd8963176516441a337a00b,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Samsung,Android 14
+8fbc435ef952c173a77055158db4ebb4,,,,organic,Italy,Samsung,Android 13
+9a55053bf00184ebb93ce9869de28a79,,,,organic,Greece,Samsung,Android 13
+a05a6c986fbdf40851e7d6e049d7db87,,,,organic,Greece,Samsung,Android 13
+e76538faa2790581077f1e1942a27ab7,,,(direct),(none),Italy,Samsung,Android 14
+e1bc7cf7866ad2b6c8a3d4878ea14515,,,HEX (GA) - Globe #adROAS,cpc,Uzbekistan,Samsung,Android 14
+5d571614de5a0cce8241e4e0d02e4fc5,,,,organic,Brazil,Samsung,Android 14
+bb30633ab4368388520317424d900bde,,,,organic,France,Samsung,Android 14
+5651e0f6dcf8caf445b340b4f3c72cf4,,,HEX (GA) - Globe #adROAS,cpc,Bulgaria,Samsung,Android 14
+62de982601707178aff7fda687793b1e,,,,cpc,Netherlands,Samsung,Android 14
+0c253f1e23ee4e1fbf9122d4c813e46a,,,,organic,France,Samsung,Android 14
+e8d4030b403a6ffba8c363ecfc93032b,,,,organic,Germany,Samsung,Android 14
+7a04230effe585b6a6c340c3156b8c52,,,HEX (GA) - Globe #adROAS,cpc,United States,Samsung,Android 14
+a18b659a184b6cb6cfc74406206b9472,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+1ca3eb20eb84b1c2fc17a9e8e1c922e0,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Samsung,Android 14
+234fbd3fa1b3705829cd46b7ac71a561,,,,organic,Spain,Samsung,Android 14
+36aa2e41b01823bd670521e7c618de4d,,,,organic,Italy,Samsung,Android 14
+4de26d322cf7b7751d05a088c08256df,,,,organic,France,Samsung,Android 14
+7d880466075e7b9ed77185684209c7a6,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Samsung,Android 14
+d0a7eb032d2c31d25415c4c4665296fa,,,,organic,Russia,Samsung,Android 14
+df21cdef6fcab35577d58f8aca628b07,,,HEX (GA) - Globe #adROAS,cpc,Uzbekistan,Samsung,Android 14
+ed5b1ab7f65e893c148a1408d111f723,,,,organic,Russia,Samsung,Android 14
+0bd1774dfe5cea029bda88a39393fffc,,,,organic,Brazil,Samsung,Android 14
+6f55baf1ece0ec92bde2ca696633a5d4,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Samsung,Android 14
+16d375400cb2345b48e00622b3caf2ca,,,,organic,United States,Samsung,Android 14
+236eb9e396ef83c5c67cb85d9e08397d,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+38368f3c3877b20ef0687f7d551a83ab,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+871a0cac73f7c8bf5df114f46e089be3,,,,organic,Spain,Samsung,Android 14
+a9f42b357fab118ef62b1ea8e1b81233,,,,organic,Bulgaria,Samsung,Android 14
+e9fa80ac2a2a400dbf43189b34407792,,,,organic,Germany,Samsung,Android 11
+fa10eb104d2992bf0d2b0eb21288a6d7,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Samsung,Android 11
+9467933069abfa86a420f0ccf74ee23e,,,HEX (GA) - Globe #adROAS,cpc,Chile,Samsung,Android 11
+04a993cc01e47f69a5e9aabe6819823a,,,HEX (GA) - Globe #adROAS,cpc,Ireland,Samsung,Android 12
+083042a3b13758d0a59f6e4233cab5bd,,,HEX (GA) - Globe #adROAS,cpc,Hungary,Samsung,Android 12
+a9c2247c90be6297f5bd0f29590b0c6f,,,HEX (GA) - Globe #adROAS,cpc,Morocco,Samsung,Android 12
+b86fdd0cafbb64cc99e324227551e33a,,,,organic,Russia,Samsung,Android 12
+2d8abbd9a3998dd530c840b9703509ce,,,,organic,Russia,Samsung,Android 13
+572c59fe63300585b594fefd0a6f1790,,,,organic,Spain,Samsung,Android 13
+d2d7e8ae7b115294f4f27f24894614ec,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Samsung,Android 13
+ee624ce38aec66e86b54e51ab2c66880,,,HEX (GA) - Globe #adROAS,cpc,Belgium,Samsung,Android 13
+154508fdea16e18c6537d4d72313a542,,,(direct),(none),New Zealand,Samsung,Android 14
+e14af4713659335796da57983bc4427e,,,,organic,Mexico,Samsung,Android 14
+863b00fab6e1a048594dd08c00673866,,,(direct),(none),Brazil,Samsung,Android 14
+4594472c6456dc2455223ad13346531d,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+b99f2d7ffdb01e1009531ac2129ab421,,,,organic,Russia,Samsung,Android 14
+81b9132863d62d4fe428043eaea36483,,,HEX (GA) - Globe #adROAS,cpc,Colombia,Samsung,Android 14
+2f8b6361d7f599369497e5bd49624048,,,,organic,South Korea,Samsung,Android 14
+ad8d0cc4aabc5633437ad45b769c48e3,,,HEX (GA) - Globe #adROAS,cpc,Estonia,Samsung,Android 14
+5a86de9abc1f053a1527092a07d519dc,,,,organic,Italy,Samsung,Android 14
+8834f0d343f3626f86c9698678c9816a,,,,organic,Vietnam,Samsung,Android 14
+b9096868e9238591a70d05784934ef79,,,(direct),(none),United States,Samsung,Android 14
+10580f897ee9633074b82aefb71b5beb,,,,organic,Russia,Samsung,Android 10
+25ae1de255d3ed81d7255286c8026124,,,,organic,Russia,Samsung,Android 12
+43a40dcee6b4e9aa60d764cc8776e4b2,,,,organic,Kazakhstan,Samsung,Android 12
+1cad74d16e1ef7cbfe47d1abc839d873,,,,organic,France,Samsung,Android 13
+283c35dfb9389500a73332751ab79873,,,,organic,Belarus,Samsung,Android 13
+d53a8a6f75cc7e5368d149b48fe44f5a,,,(direct),(none),Belarus,Samsung,Android 13
+daeb8ebc9ad79d63d60f97c06aba52a8,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 13
+5a8570e67b277f4a996ab849ecac37cf,,,,organic,Russia,Samsung,Android 14
+8907fe22ae74c472edb0af30103df2f2,,,,organic,Germany,Samsung,Android 14
+3a03877eb266759b315cf5bcc0d13fb3,,,,organic,Russia,Samsung,Android 14
+fdd1211060368358c6980984cc4a5ad1,,,,organic,Russia,Samsung,Android 14
+5c92d06b9fcc50ac3ec2cf05cfe54b1b,,,,organic,Russia,Samsung,Android 14
+005c2007a44780753061481ec8d72bf2,,,HEX (GA) - Globe #adROAS,cpc,Slovenia,Samsung,Android 14
+c5e6dc1fb3a6c23484cdab913cc4de1e,,,,cpc,Czechia,Samsung,Android 14
+5f25b239731f458363324c7bb084083f,,,,organic,Mexico,Samsung,Android 14
+ce90b5327fb10734304dd63bb3572536,,,,organic,Netherlands,Samsung,Android 14
+def0af51ad72732b60d15719ebc2f11a,,,HEX (GA) - Globe #adROAS,cpc,Netherlands,Samsung,Android 14
+44ec7b0c3a063adabf5ba146c0685ad3,,,,organic,Uzbekistan,Samsung,Android 14
+5a545d9f59077d97456fbc38f63312d8,,,,organic,Germany,Samsung,Android 14
+7f42240abb94314b449372f2cc5645ba,,,,organic,Russia,Samsung,Android 14
+d9c24a39331670a9701c9ba87320cae7,,,,organic,Croatia,Samsung,Android 14
+df4dc20de116084eefe6b9defc01be48,,,,organic,Russia,Samsung,Android 14
+68eac7d33d9850caaf164c356aa8d80d,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+fa608b6be5cffef36146829a2fe22869,,,HEX (GA) - Globe #adROAS,cpc,United States,Samsung,Android 14
+d51c3f950d3d33f20786b45dc39d3e07,,,HEX (GA) - Globe #adROAS,cpc,France,Samsung,Android 12
+884c3a65c99876401ef89afb5ee3b747,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Samsung,Android 11
+143d5ac4bbba05cf73b1924238c47aca,,,,organic,Hungary,Samsung,Android 12
+3abfc57ad99eac412118706200cb021f,,,,organic,Germany,Samsung,Android 13
+42844172e47376bb3499918c2cde3439,,,,organic,Russia,Samsung,Android 13
+47755044d32422eefbcc9c5ab7f6e20f,,,(direct),(none),Russia,Samsung,Android 13
+485b9fbcec6fe840eaf20722c9bc40c3,,,,organic,Germany,Samsung,Android 13
+50e3b86788bc756ad7bd2afde78636bc,,,,organic,Germany,Samsung,Android 13
+5bcaf770cf9252a40dcd1a96bc90055b,,,(direct),(none),Taiwan,Samsung,Android 13
+5ef4411b6326cb371fc460fd06825ad0,,,,organic,Hungary,Samsung,Android 13
+962ad44ebbea08b3ea568b340f3d5ff0,,,HEX (GA) - Globe #adROAS,cpc,Kazakhstan,Samsung,Android 13
+fdd69595f4aeaed4864728f7ac460fcd,,,,organic,Germany,Samsung,Android 12
+3594654e66f3fe8e5f29b4febc7eafa7,,,,organic,Germany,Samsung,Android 13
+3e1fde8f75838c07fe629e628421f1a2,,,,organic,Portugal,Samsung,Android 14
+72f8a0f77603432b0fa4f589c846ed20,,,,organic,Russia,Samsung,Android 12
+ea5feb909c974f48a06589bbb9df2d94,,,,organic,Germany,Samsung,Android 14
+07d0bb325bc90f9258bef060abecd2c3,,,,organic,Taiwan,Samsung,Android 14
+4b62b8bfa967975057b61a8656092f7a,,,,organic,United Kingdom,Samsung,Android 14
+8b68d5c01278dd80a6ba8432a0fcc393,,,,organic,United Kingdom,Samsung,Android 14
+8f5390482da39baf1dde5a358b31fbd5,,,,organic,Latvia,Samsung,Android 14
+bddd29e955d5b9309c34e3d7cfe9c270,,,,organic,Germany,Samsung,Android 14
+f51f3406e889e41eb04cd6a3702b429a,,,,organic,Germany,Samsung,Android 14
+db5ad72d32c128eefa69a0c6923d517a,,,,organic,Russia,Samsung,Android 9
+e5bd1a498d58265027f61327339dc1f1,,,HEX (GA) - Globe #adROAS,cpc,Taiwan,Samsung,Android 14
+4b2e19deecedd41c16db6b3ac5f832b7,,,,organic,Russia,Samsung,Android 14
+71cabcb9b0044d03ca7b85f62126bfce,,,(direct),(none),Germany,Samsung,Android 14
+aa2881b3abaa6186f5d779937541271c,,,HEX (GA) - Globe #adROAS,cpc,Poland,Samsung,Android 14
+d64284eaa895fad932e8a0a3d505e291,,,,organic,Germany,Samsung,Android 14
+2325d4155142288fb65888275d7856fd,,,,organic,Brazil,Samsung,Android 14
+af8033f62be21cd994f866ce4c9344cd,,,,organic,Russia,Samsung,Android 14
+e6b428e23a2550cc6176d70094111186,,,HEX (GA) - Globe #adROAS,cpc,United States,Samsung,Android 13
+ab4511daf27f694abc90934b2cc8762d,,,(direct),(none),South Korea,Samsung,Android 14
+f5c6a02c31dc8d7790207f3a38d5b0a0,,,,organic,United States,Samsung,Android 14
+75254ebdddacd5f085130a7b72806129,,,HEX (GA) - Globe #adROAS,cpc,Canada,Samsung,Android 14
+12cec082a1356eb20c50349abaa616cd,,,(direct),(none),Germany,Samsung,Android 14
+3c1327e64c398c04232357cefc41215b,,,,organic,Germany,Samsung,Android 14
+46d685913c70c17f97c7267c1efc06d5,,,(direct),(none),France,Samsung,Android 14
+70445c553e9c0d7095918a5b2ee39b59,,,,organic,Poland,Samsung,Android 14
+9adac7d47c001622d4b49b26fe7665e6,,,(direct),(none),Czechia,Samsung,Android 14
+3ef9c1aefbdf7d2a486696fa997c021d,,,,organic,Russia,Samsung,Android 14
+78a6620fa95d9dd42ff34d68b59ab5ca,,,(direct),(none),Palau,Samsung,Android 14
+9aebbbc3ce8ffe8027b945a57eeb6faf,,,,organic,France,Samsung,Android 14
+bb8f84794330c594a55dd6e82850a1d1,,,,organic,Türkiye,Samsung,Android 14
+4cbc9d09983c69f1b6f6109d5837f197,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+4e19a46afa04ef3fd9596707854b2c27,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+a02c67c1d101162c46eb2aa3d5f9b99a,,,,organic,Ukraine,Samsung,Android 14
+b674481b6edce04894cb52f98f8b5d73,,,,organic,France,Samsung,Android 14
+bdfdcd98c18d79e5586c5f3fc91c262e,,,HEX (GA) - T1 #hybridROAS,cpc,Germany,Samsung,Android 14
+784f4fcb0e5add5c9505400176278089,,,HEX (GA) - T1 #hybridROAS,cpc,Russia,Samsung,Android 14
+967f41dd8507a50f6e61b2891c6675f6,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Samsung,Android 14
+e868a3bf5032d9f08f8a25cc57a793c6,,,HEX (GA) - Globe #adROAS,cpc,New Zealand,Samsung,Android 14
+0b5ba6ddd3e5916b3ac05c8d0c5391be,,,HEX (GA) - Globe #adROAS,cpc,Hong Kong,Samsung,Android 11
+0a793f015fb11f0ebaca0785fe6eb742,,,,organic,Russia,Samsung,Android 11
+3907b3af7b1d49fa78dfac32a496c2a4,,,,organic,United Kingdom,Samsung,Android 11
+6610a16d7c2d60a0510376d24572ed78,,,,organic,Indonesia,Samsung,Android 13
+91d0d7b903c9c6dd5bf2b50abf54fba3,,,,organic,Netherlands,Samsung,Android 13
+a48c877061b26619b556754ae9366136,,,,organic,Russia,Samsung,Android 13
+d760681ebd3399505438abe48fb77e95,,,,organic,Canada,Samsung,Android 13
+9483d379f53e6d27c1910f55df7ae880,,,,organic,Indonesia,Samsung,Android 14
+2fe308172e343d933bb47e1fdf08be1e,,,HEX (GA) - T1 #hybridROAS,cpc,Canada,Samsung,Android 14
+3d597aadd1d49bf9a445dc65cf903bd9,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+1b33d1239d583de611b0e84b37eed74e,,,,organic,Algeria,Samsung,Android 14
+7af57118cf994057957ef27b6420c633,,,HEX (GA) - Globe #adROAS,cpc,Venezuela,Samsung,Android 13
+b654bd4f7eedbff8f482b8caf39766c3,,,,organic,South Korea,Samsung,Android 14
+88a08d28213517615019e20189997879,,,HEX (GA) - Globe #adROAS,cpc,Malaysia,Samsung,Android 14
+ea05952045ba3038bc3fc301988110bf,,,HEX (GA) - Globe #adROAS,cpc,Thailand,Samsung,Android 14
+f46909a36c45139fe370b59504211e3b,,,(direct),(none),Spain,Samsung,Android 14
+03aa00cafcdcf9fe584aedc6697fb4f1,,,(direct),(none),South Korea,Samsung,Android 14
+6ad546942db3cb3ba5b18e8f61ee5606,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Samsung,Android 14
+e5624bf64efa107a182d63bce24d0dd3,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 12
+65e4d1d4e6c5d0647bf8a2ea11ed1652,,,HEX (GA) - Globe #adROAS,cpc,Austria,Samsung,Android 14
+276b68179411450e6b9ddb11c1ec7722,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+28939d0739bdb44d6cce0fb581072bd6,,,HEX (GA) - Globe #adROAS,cpc,Serbia,Samsung,Android 14
+7c2f984a1817cbc032674a6761950aa5,,,(direct),(none),United States,Samsung,Android 14
+bc070fded3e587d80abb8e800d15b6ff,,,(direct),(none),United States,Samsung,Android 14
+0414bf106b0c9954e65717951e69f3ce,,,,organic,Slovenia,Samsung,Android 13
+5e55d90ee9283c2bd7d42e063c139b8d,,,HEX (GA) - Globe #adROAS,cpc,Azerbaijan,Samsung,Android 13
+67cdd4bd9055f36e32cb6f589dc07f2d,,,HEX (GA) - Globe #adROAS,cpc,Canada,Samsung,Android 13
+8e86aed569abe0bcedded9af5fd74ed2,,,,organic,Germany,Samsung,Android 13
+eaecb31ea2923aed1ec524199b8c07c9,,,,cpc,Germany,Samsung,Android 12
+8687f2cae7319b48777046a123ff5c28,,,,organic,Germany,Samsung,Android 13
+5ad03cba0ed7a5853f301a9335944c2c,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 13
+f5c3bc45fca4de33c2f679ae9e8d451c,,,(direct),(none),Canada,Samsung,Android 13
+e5a81b299788ae866bd8519cd901cfb8,,,,organic,Morocco,Samsung,Android 7.0
+e323d3c8c2f660f5d14412c3fc078fbe,,,,organic,Russia,Samsung,Android 9
+e8f6f642f5d646295fee52fcb85be12d,,,,organic,Russia,Samsung,Android 9
+ecd8661f0f609aa535f72f6e45155ae4,,,HEX (GA) - Globe #adROAS,cpc,Canada,Samsung,Android 9
+057cd931b6aae9dc373bd64fe365bed9,,,HEX (GA) - Globe #adROAS,cpc,Japan,Samsung,Android 10
+0803ca5b1922a08c2b47853b1e0ef730,,,,organic,Germany,Samsung,Android 10
+99d2310c02fdcb9c29af221035b62032,,,,organic,Germany,Samsung,Android 10
+5654c6a758605fd1d9732f0efe81df52,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 10
+8a051d9a9de7062aec28c0eefa1c6b27,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 10
+808c1ef01a04ecffb2bdb3109402a3ff,,,,cpc,Austria,Samsung,Android 12
+5e45ff5b6589b6cef5794a2a8427e758,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 12
+9b8bb42e062283d2e8660e5c72f84cea,,,,organic,Germany,Samsung,Android 12
+2a6206717f818e1f404edaa168343929,,,HEX (GA) - Globe #adROAS,cpc,Chile,Samsung,Android 12
+81d775e6ec980c92efae9662be9b6c6f,,,,organic,Indonesia,Samsung,Android 12
+e7c70b665020f79b8e1937da50a1eb85,,,,organic,Romania,Samsung,Android 12
+0e0380f64d1022c5ce23cd8e3fecd196,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 12
+99ef87393e72a54b34751e7c35121c41,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 12
+6c965c4b5f08769f56abe22abbc74952,,,,organic,Germany,Samsung,Android 13
+469b7c854890ee5e52c7d166ef05e7b0,,,,organic,Italy,Samsung,Android 10
+c8cc9576ee514aa58aca4b1f4eded06c,,,,organic,Brazil,Samsung,Android 13
+7bfa0991482c391ed61e95129b02a2f4,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 13
+bd2c76c3b38b3a3ed860c6ec763b4d1d,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 13
+19f3a1f1d43d91b79caf9f3efc4e340a,,,(direct),(none),United States,Samsung,Android 13
+89460c4a0c8a2d9399908d88b7cd40a5,,,,organic,Iran,Samsung,Android 13
+886b99500c861bfca323ef25ca27f67f,,,,organic,South Korea,Samsung,Android 13
+b446eda6e5027541a6fd636507049353,,,,cpc,Canada,Samsung,Android 14
+95fc5be74f465cb978f65f0fb9b2e9c4,,,HEX (GA) - Globe #adROAS,cpc,Kazakhstan,Samsung,Android 14
+a944bef395df21fce4091e62f9d04a15,,,HEX (GA) - T1 #hybridROAS,cpc,Netherlands,Samsung,Android 14
+cd11dea5bc9bc9dbf225c050aa1e1c91,,,,organic,South Korea,Samsung,Android 13
+3486d995390a1004db9a85cea4f0e0da,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+404275d9e37dbb408ace6d8d44b04bbb,,,(direct),(none),United States,Samsung,Android 14
+a08c47dd060bdefc3f4002ef875062cf,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+cef9d509aa0c2c5a88f31fc267044f30,,,,organic,United States,Samsung,Android 14
+1c2ac73e4a2b80153a06b41d82fe8ba1,,,,organic,Russia,Samsung,Android 14
+283c9e514691e4e9e11ae084d6fa3253,,,HEX (GA) - Globe #adROAS,cpc,Russia,Samsung,Android 14
+d387f19d0215b0a860f34cb937f5cbc5,,,,organic,Germany,Samsung,Android 14
+fe5ae0a0e39844255f2501aaad6a338d,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+28bc3ae4a9e9f6cb708c9f2912e46925,,,(direct),(none),Portugal,Samsung,Android 13
+db705dd30dfb94230870109f1d6affb7,,,HEX (GA) - Globe #adROAS,cpc,Egypt,Samsung,Android 14
+f992bf260669f4531c3aa40c7632c78e,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+e5bd2cbc46f0d1a067fcd1d7eea37c33,,,,organic,Russia,Samsung,Android 12
+26537a02bcd2fdefa0ce848a4972e91f,,,(direct),(none),India,Samsung,Android 14
+c6cdc6ae9220a18028f839e1dc8ecce2,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+308277ca78fc720449590b9c09124c66,,,,organic,Russia,Samsung,Android 13
+765cd47d72187dbd0e5cf1f691db665b,,,,organic,Russia,Samsung,Android 13
+866a1988cae6750b00448eff8ac2f15f,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Samsung,Android 13
+9f1c8273828c71b4a167fad02ae98b7c,,,,organic,Poland,Samsung,Android 14
+175a4f656a65966dac1d2a41ee771675,,,,organic,Romania,Samsung,Android 14
+d135e9ae669aa56686ccde07ff4178db,,,,organic,Russia,Samsung,Android 9
+68a2991d1e7294367b2b971d4b79ffae,,,,organic,Hungary,Samsung,Android 10
+e325b539c2e9288b53e9c651d77528e3,,,,organic,United Kingdom,Samsung,Android 9
+97604184c65c4730ef46b8bac9b0e43f,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 10
+fdc55a3b4f606081e955418e1b219c06,,,,cpc,Germany,Samsung,Android 12
+6299131d8b85853b606842db531ce8d4,,,,organic,Hong Kong,Samsung,Android 12
+d9f0484be55334352be47bc535e0ddd6,,,HEX (GA) - Globe #adROAS,cpc,Malaysia,Samsung,Android 12
+d4ea83b14d60e654698d1a100ed46a20,,,(direct),(none),Germany,Samsung,Android 12
+217defb5e951838a2bfba5b5f8affb58,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 12
+7c0e4fd26d5589ecb50716c0537b1897,,,,organic,Russia,Samsung,Android 13
+16dd7463f10eda8427a63ca1cb72470c,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 13
+f962da1b041f1076d3145f9d7a73bc2b,,,,organic,Russia,Samsung,Android 14
+57886b68c7631a2f98d338ce9ba7c768,,,,organic,South Korea,Samsung,Android 14
+8de33d27663f120d02124b416ce5856b,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+6cd3b2ba53b326606886ebce7bf54e36,,,(direct),(none),United States,Samsung,Android 14
+a2fe36737898383a46d71e1f3374b25f,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+378a719dbb65a98c643dcc461b8af27a,,,,organic,Spain,Samsung,Android 14
+4a4faf2566e2b4ffbc289db84f5ec8b2,,,,organic,Chile,Samsung,Android 14
+40b87232bf89b0584696bf204ce819a0,,,HEX (GA) - T1 #hybridROAS,cpc,United Kingdom,Samsung,Android 14
+5c57904a5c50570a20ac541ddd96ff05,,,,cpc,United Kingdom,Samsung,Android 14
+912241fddc6ab6da75ba210d4fb8a499,,,HEX (GA) - T1 #hybridROAS,cpc,France,Samsung,Android 14
+dace9c40e33638ae846c4505c156980d,,,,organic,France,Samsung,Android 14
+b26cded9f82c02504749a6c9b4a38395,,,,organic,United States,Samsung,Android 14
+d5f1fff282d07f0d4a0c40dae2c69335,,,,cpc,United States,Samsung,Android 14
+4fa414c1efec8a8c5526a70aede44600,,,HEX (GA) - Globe #adROAS,cpc,Canada,Samsung,Android 14
+3a5d19a14d60fb1335f5281197b59e61,,,,organic,Germany,Samsung,Android 14
+770826f162f0c2bc4fa852407e9e813f,,,,organic,Italy,Samsung,Android 14
+ff00856eb56d61122a5cfa6b00b5ae73,,,(direct),(none),Australia,Samsung,Android 14
+21f2ec730d01b6f376edd46f21535d9c,,,,cpc,Germany,Samsung,Android 14
+27793f176c078d5b3016277e0612fe40,,,,organic,Germany,Samsung,Android 14
+40ee25b192370e5a3e04e848b635ea1b,,,,organic,Germany,Samsung,Android 14
+4eab32595332f10526ec65160fadd1e7,,,(direct),(none),Denmark,Samsung,Android 14
+71cad57c32a49088646e79e47903a31c,,,,organic,Germany,Samsung,Android 14
+5459b55e17bd684fc49c18905d230295,,,(direct),(none),Germany,Samsung,Android 9
+3ce6b65a8fe69084465710e7bbad751e,,,,organic,South Korea,Samsung,Android 14
+8379ebd6078a138c12115835b7c1ec14,,,HEX (GA) - Globe #adROAS,cpc,Uzbekistan,Samsung,Android 14
+0f6a6c4411983980c713ea2587a8036a,,,(direct),(none),Canada,Samsung,Android 14
+95bfc83f5183ab3474914572a03d4bc7,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+ccc7570c9ef63ce7fe34c4425444028a,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+4ee56f72b6e4eb62a971e510480db4f4,,,,organic,Finland,Samsung,Android 14
+6bb7f6cb106dcc1dedc000a333f7115e,,,HEX (GA) - Globe #adROAS,cpc,Lithuania,Samsung,Android 14
+6eff0a6de438d6f1bf1872d6ecf75d0e,,,,organic,United Kingdom,Samsung,Android 14
+73407567ccfaab3f4f0d9417063b613d,,,HEX (GA) - T1 #hybridROAS,cpc,France,Samsung,Android 14
+ae117eac39dd27ccfb587cfb4dffe147,,,,organic,India,Samsung,Android 14
+b6a5f74887473507fa446b66a03bd32b,,,,organic,Germany,Samsung,Android 14
+356fb9aab4ac9fd35ea3f21513807d04,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+6e97f06665873c363f2eb62aa926a056,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+88cac52ea2f9dfb8ebece8b49994945c,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+f207776e0709cdcb1043233736a690d5,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+f40593a8de8c26e9100fdcfb8a0d9e4b,,,,organic,United States,Samsung,Android 14
+ff197b5e376116941f96d29a88dcc560,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+38b4331532ccb75f690e8281a7405da3,,,,organic,United Kingdom,Samsung,Android 14
+82f3aac9fac545152f68c42b085c4bb1,,,,organic,Germany,Samsung,Android 14
+8a81a6a0fe8da5c5e1ba74ea9b91c75a,,,HEX (GA) - T1 #hybridROAS,cpc,Russia,Samsung,Android 14
+3488efa03753630d42d92d1cc9807d9f,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+cfc6a5afc80bf01c2c397e77facae3c2,,,,organic,South Korea,Samsung,Android 14
+dd362e40d7747b634e34e9118f712bad,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+9183c85d8b08e54231525fc296a8518e,,,,cpc,United States,Samsung,Android 14
+946a30fc91655c08ff9ce4c83d1a0099,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+fe2f7d190b9377df2136d9d9a0ab5857,,,,organic,United States,Samsung,Android 14
+014d8b1ae1539ac283474152c8c59159,,,,organic,Russia,Samsung,Android 14
+2e183acba0fa548e273d13225bb3bf5c,,,HEX (GA) - Globe #adROAS,cpc,Italy,Samsung,Android 14
+c03a457fe440c4fdc8d0aec037594652,,,,Migration,Poland,Samsung,Android 13
+cbc668619a0461d793f95cd0fbfe1dbf,,,,organic,Thailand,Samsung,Android 14
+d3549071fb85dab83ee039abe6ae9b85,,,(direct),(none),United Kingdom,Samsung,Android 14
+ea1140da159c2341572a8c3acb418064,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Samsung,Android 14
+f3fc0cf9d9daf2ecb8b246a7c006de8d,,,,organic,Russia,Samsung,Android 14
+5570f35f63f4dddfa797f34c5367991c,,,,organic,Mexico,Samsung,Android 14
+79158153c90b3d23f6c173e1f5223672,,,,organic,United States,Samsung,Android 14
+82117eba9e6004cb7abb4b61eb822dcd,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+84c9408ac8395db8a2a6a301c384732f,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+9ac1f190c2aa8e9058e4483578c98a48,,,,organic,United States,Samsung,Android 14
+b9bbc0d87fa0daa28d5a92204e58ab8e,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+c4a9c536debcbaf2a1f95be241b14613,,,(direct),(none),United States,Samsung,Android 14
+d376cb3b0fd7a0214677b1a154ac3463,,,HEX (GA) - Globe #adROAS,cpc,South Korea,Samsung,Android 14
+dde6b9f9155af74e6f7a92f0a7ca2a01,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+e718eec5230af68e83c7b982d81df637,,,(direct),(none),South Korea,Samsung,Android 14
+f02b37cc1d4ac0279dcebd843db64318,,,(direct),(none),South Korea,Samsung,Android 14
+02d98185b428e06e919d9b45d7a14dd1,,,HEX (GA) - Globe #adROAS,cpc,Germany,Samsung,Android 14
+54be6c73173df9d1c8e8edebb36a7b7a,,,HEX (GA) - T1 #hybridROAS,cpc,Australia,Samsung,Android 14
+89473f02aa2a9da4d7a02bba937c4d05,,,,organic,France,Samsung,Android 14
+b0d27540143d979656435df7e5e9cb96,,,,cpc,Spain,Samsung,Android 14
+b13bb0d06095e3c43e874b2c698b1c88,,,(direct),(none),New Zealand,Samsung,Android 14
+b6ccdfd5fd683944d585ec2b9621900a,,,HEX (GA) - Globe #adROAS,cpc,New Zealand,Samsung,Android 14
+bd603a29c6fc57215481986efcbee7c3,,,,organic,Russia,Samsung,Android 14
+dee980e9b63dc920c4ebff76d5c22351,,,HEX (GA) - Globe #adROAS,cpc,Moldova,Samsung,Android 14
+285c342b764ed7e950c1cc43ea33b8eb,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+64dfb669d1ab5dbe079c509c19de7a5a,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+0f2d0e71c39ecc71a3f10f25e9a6a10d,,,,organic,Belgium,Samsung,Android 14
+38ed6ed70ed442e7d7bd99d6192b86cf,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Samsung,Android 14
+4e2730670e5730232b90708e02ca39a9,,,HEX (GA) - Globe #adROAS,cpc,Romania,Samsung,Android 14
+823a93603be7ec378fc534eea0872b9c,,,HEX (GA) - Globe #adROAS,cpc,Cyprus,Samsung,Android 14
+b1a54d275744383fdada57203c033c98,,,HEX (GA) - Globe #adROAS,cpc,Slovenia,Samsung,Android 14
+d6126bf34591fa3c3134880c72de9061,,,,organic,Brazil,Samsung,Android 14
+4332c733eb2d07a1d9da2f0838df6b17,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+69ea7caa2dcb5f107dae073dfc0fa708,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+d4d47f5dd938902fe53f94e39772c5c5,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+dfbc65186ad80d1540fb99d3176ae6d7,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+432857dcdc6c0e5d3a0a9a56ad065b56,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+cf090355fcd3e2a14485091dc938d187,,,HEX (GA) - Globe #adROAS,cpc,United States,Samsung,Android 14
+0caa95abcc6e78e51584742bae0e68c9,,,,cpc,Germany,Samsung,Android 14
+25e14fa746c3769c13924ab6d2b38a11,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Samsung,Android 14
+6d0eeb6116091da7e1fcba4cd03c09fd,,,,organic,Russia,Samsung,Android 14
+76e0c4c2408595364545ab7d90571981,,,HEX (GA) - Globe #adROAS,cpc,Israel,Samsung,Android 14
+ab9e73b4bc02acdafcd7623bda0ad9fa,,,HEX (GA) - T1 #hybridROAS,cpc,United Kingdom,Samsung,Android 14
+db712aed004159d015cbbfaa1c214d53,,,,organic,Israel,Samsung,Android 14
+30d7f9895209bbf7d8aee47594f818ff,,,,organic,South Korea,Samsung,Android 14
+4b0458432f27adf03acaf693d363a4f0,,,,organic,South Korea,Samsung,Android 14
+a1de5a3ca84ffb86c698e527c846ee46,,,HEX (GA) - T1 #hybridROAS,cpc,South Korea,Samsung,Android 14
+b46868126da4cff9c5355b2ab157c384,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+d97f9df0cbee0f5aec3b9593a7befe75,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+f47d1428730fd6bc2f9b63ef57b38e94,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+f85d48c0913b0a5786988ce93db56d37,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+42684aca938d5563fffd6643c63163bf,,,HEX (GA) - Globe #adROAS,cpc,Hong Kong,Samsung,Android 11
+a2306937f25dde797b0c482f3896b610,,,,organic,Spain,Lenovo,Android 11
+059450645169eb8e89d4756b4c35b1ca,,,,organic,Poland,Lenovo,Android 11
+c47b5f32d0f55b7632ef1e37472b735c,,,,organic,El Salvador,Lenovo,Android 11
+ad3af7e72a521a72d5253548836aa7ac,,,,organic,Belgium,Lenovo,Android 10
+22d4470183f4d8684c2639ea3e7473e8,,,,organic,Hungary,Lenovo,Android 10
+74210f97a449b4f7211450fbb960e422,,,HEX (GA) - Globe #adROAS,cpc,Czechia,Lenovo,Android 10
+7efa100f9384e4e2893496faa84be1b4,,,,organic,United States,T-Mobile,Android 14
+bbefe03b2589af0c796a39449ec474e0,,,HEX (GA) - US #hybridROAS,cpc,United States,T-Mobile,Android 14
+732a68b792cc2a2bbe2fa6bc9fbfd87f,,,,organic,United States,T-Mobile,Android 14
+b5fe71cffda1da06ad934e41574068f8,,,,organic,United States,AT&T,Android 13
+3bb1f112e8358f52720a3cbcb0bfd697,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Motorola,Android 14
+918AFC197B7C42FF8CFD6367CC0A660D,,,(direct),(none),Russia,Apple,iOS 15.5
+BB5FF247B5344B2BAAFFFCA8CFCF8438,,,(direct),(none),France,Apple,iOS 16.3.1
+D37DCD35023D47C09D6DCC56A1737DC3,,,(direct),(none),Russia,Apple,iOS 16.7.1
+1A99DD037E7540E9B4F4B95895614F4C,,,(direct),(none),Vietnam,Apple,iOS 16.7.10
+1944c4461f19ae294413621a90502d08,,,(direct),(none),Mexico,Motorola,Android 14
+a35695d6454a04f3e250bdd05a7b8125,,,HEX (GA) - Globe #adROAS,cpc,Poland,Motorola,Android 14
+1a779baf9ea459253e830cbacb66db35,,,,organic,Taiwan,Xiaomi,Android 11
+76484591523cd851179d392ebeacc463,,,,organic,Russia,Xiaomi,Android 13
+86c9f134c3b6d21fc871b9bce8e01b8a,,,,organic,Russia,Xiaomi,Android 13
+26df8e2b34b8897ab362d70d45eba52a,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Xiaomi,Android 11
+5e81e8b8664c138c5374dcd482fb3c54,,,,organic,France,Xiaomi,Android 14
+34b849c30b97fcd03ee98ff240286350,,,,organic,Russia,Xiaomi,Android 14
+4fb9cf72bf745e2918b71921ed01f41a,,,HEX (GA) - T1 #hybridROAS,cpc,Germany,Xiaomi,Android 11
+6b6199ca0403eec14d13d0d34ed0117b,,,(direct),(none),Russia,Xiaomi,Android 13
+a8ffb058c2e72c6226d302c206939396,,,,organic,Russia,Xiaomi,Android 14
+d7369fa0e99317f020d5704b970b5196,,,,organic,Russia,Xiaomi,Android 14
+38335b80e88e93d9030309438c632ccf,,,HEX (GA) - Globe #adROAS,cpc,Mexico,POCO,Android 13
+1723ef15d3affd7b434bda4e230af8e4,,,HEX (GA) - Globe #adROAS,cpc,Kazakhstan,Xiaomi,Android 13
+3e1ee20cff94f33abb7ff69ee2136407,,,(direct),(none),Germany,Xiaomi,Android 13
+6ded083e76c561318aa817f4546908b5,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 13
+40ab4d0f8fcbb2025dfc18545ce0c8c1,,,HEX (GA) - Globe #adROAS,cpc,United Kingdom,Xiaomi,Android 13
+5aa6aa0614dbab172096378720097c03,,,,organic,Russia,Xiaomi,Android 13
+6351db1675589fecf67c31432c055add,,,,cpc,France,Xiaomi,Android 13
+95bf141dd8cf9336ed7f647e7bf7b326,,,,organic,Germany,Xiaomi,Android 13
+a98544b7f22dc057e986a5f5c08ac1d6,,,,organic,Russia,Xiaomi,Android 13
+cf2ede83bab75ff02d3ae84879f0dd92,,,,organic,Russia,Xiaomi,Android 12
+e63535f44ce5b3f3d3bf90cc14697256,,,,organic,Ukraine,Xiaomi,Android 11
+35f7bd96c6b28bc2c1ada252d4553f62,,,(direct),(none),Iran,POCO,Android 11
+16d94d40c72750b25995697cb8ec3770,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 13
+8d19318baf80e2319b55594bcc6cbdc1,,,,organic,Uzbekistan,Xiaomi,Android 13
+770f92b35a7a483d7416bc0c28d9e61f,,,HEX (GA) - Globe #adROAS,cpc,Colombia,Xiaomi,Android 13
+ac609f7a2748d654ae7d5d02aa26a756,,,,organic,Ecuador,Xiaomi,Android 13
+5091e815c40b2b4cd6f6edd9ef7a4a38,,,,organic,Portugal,Xiaomi,Android 13
+6a20f3f5fbb595e63ab263a7e075cd4a,,,(direct),(none),France,Xiaomi,Android 13
+8a0535caa1a9d7086c737253fff7e867,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 12
+c2e5054c0cacf586df6bdd0b7122544c,,,,organic,Portugal,Xiaomi,Android 13
+36ef2d850c1f424a83ffcb0afaa4b287,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 13
+3c01ded1483fb4072138b12f1bb243ef,,,,cpc,Spain,Xiaomi,Android 13
+b7a16120a7a68b975b1a2eecbb5e2820,,,,organic,Russia,Xiaomi,Android 11
+9e8da4d33f844dd5823b0a5edb9a64ea,,,,organic,Russia,Xiaomi,Android 13
+d5986e942ad9c3fba2a5858306080c2f,,,,organic,Philippines,Xiaomi,Android 14
+37ffc5464882ddb19e0e46637e3e64fe,,,,organic,Russia,Xiaomi,Android 13
+427a9f8525e6a4239b22828f53fa5c62,,,,organic,Russia,Xiaomi,Android 13
+9e0c48716c3bc0a67a80942e31e2930c,,,HEX (GA) - Globe #adROAS,cpc,Germany,Xiaomi,Android 13
+fd1495089b600ec2f191b025f9cd4619,,,,organic,Russia,Xiaomi,Android 13
+07d5c21153c55d9372a507411ffa6b5a,,,,cpc,Poland,Xiaomi,Android 14
+3d0134fac00b6d02d1040ebb0fb7a7de,,,,organic,Spain,Xiaomi,Android 14
+a3c38a28a021a047ef7a900338654a71,,,HEX (GA) - Globe #adROAS,cpc,Portugal,Xiaomi,Android 14
+ea55a4a0e1bb49a5a249f23e5f73b7f2,,,,organic,United Kingdom,Acer,Android 13
+d452f8d3061357849fa5569c4cc059f0,,,,cpc,Poland,Huawei,Android 10
+122c4d40af6a3f73150f163c6a57a877,,,,organic,Russia,Xiaomi,Android 10
+232831190a64fdb91c4ba5c018385d88,,,(direct),(none),Spain,Xiaomi,Android 12
+9d06b5de5020f3dc10503a8ae65b1bbf,,,HEX (GA) - Globe #adROAS,cpc,Argentina,Xiaomi,Android 12
+a7e490f50249f6c5048cd5a7c41c38fa,,,,organic,Myanmar (Burma),Xiaomi,Android 11
+c0c8896a5c5ba4361898fbf151af3805,,,,organic,Panama,Xiaomi,Android 11
+dcccf1345328c3f87fd814dcc68816f7,,,,organic,Uzbekistan,Xiaomi,Android 11
+802a75c5600b49d075a56e17760ac636,,,HEX (GA) - Globe #adROAS,cpc,France,Xiaomi,Android 12
+1ca4e7a92cad85ba88bdb47b196e8ae3,,,HEX (GA) - Globe #adROAS,cpc,Philippines,Xiaomi,Android 12
+024d92c17c3a0a0b66e8eae3787a0f3b,,,(direct),(none),Russia,Xiaomi,Android 12
+e0cf93119ba5f7d17aed2850f28fae5d,,,,organic,Indonesia,Xiaomi,Android 12
+0698ceb8425a984eb790757883e9d85a,,,,organic,Russia,Xiaomi,Android 13
+1c6d64e359bcad257e540c77b3fa166e,,,,organic,Czechia,Xiaomi,Android 12
+d8635f61f553dcd0f56ad8e283d2e561,,,HEX (GA) - Globe #adROAS,cpc,Czechia,Xiaomi,Android 12
+63ce3ad06170adc506b2d83e71350117,,,,organic,Belarus,Xiaomi,Android 12
+9c8cf0a96a61d970de120ef9885d327f,,,,organic,Russia,Xiaomi,Android 11
+b5eb6c6002e756c9681dc49cab7dc712,,,HEX (GA) - Globe #adROAS,cpc,Thailand,Xiaomi,Android 13
+e0d10a3b0b52db349db003cd97e0a8fc,,,,organic,Belarus,Xiaomi,Android 13
+ce8df9a53d0c06c3e00aac528a571e62,,,(direct),(none),India,Xiaomi,Android 13
+b5718ec2b276115bfb6ed496d4fbe9da,,,,organic,United States,Motorola,Android 14
+7df20dd4a6b4bee5449710972970fa9c,,,,organic,Russia,Samsung,Android 11
+980a1dbba97203b63c75a40d2c6f9597,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 12
+2f8761ba5eadb9c6d14e468ce9a9d2e8,,,HEX (GA) - Globe #adROAS,cpc,Argentina,Samsung,Android 13
+fa5e041c5d4f18d3ee59794eee1d9474,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+154345e68297b7b59f5641cb06d97e75,,,HEX (GA) - Globe #adROAS,cpc,Switzerland,Samsung,Android 11
+2cee77c0ed740240caed32f075f7c50e,,,,organic,Russia,Samsung,Android 11
+9fed652fdee775e0a902bda04fd0d170,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Samsung,Android 10
+6f0b96bcf261278e2b733313ac189335,,,,organic,Russia,Samsung,Android 11
+819e6e08e20b4907e5c02685ac348d84,,,,organic,Belgium,Samsung,Android 11
+c83b8d91bc06b3b7ccd5ae66b373dff8,,,,organic,United Kingdom,Samsung,Android 11
+b0ea53ce98f3b136dc44b40e22a696c7,,,,organic,Brazil,Samsung,Android 11
+4e65365d91121c3a57b612e7df2d1237,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+6c72c3470e5a8b35022cb74a403b54f0,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 13
+2973efdcc3331e08f1a1ed843d392ed2,,,,organic,Poland,Samsung,Android 14
+84cfa68c2a2afff3bcaf511d3f91229d,,,,organic,Ukraine,Samsung,Android 14
+28ac04e4af92208c202249ebd99522f9,,,(direct),(none),Canada,Samsung,Android 14
+75da10bcd921d5b190d0a038fc284994,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+3b1769ca79f6f8c365219ded4615c700,,,,organic,Morocco,Samsung,Android 14
+cad209d91b1d98b61471c062d388088d,,,,organic,Morocco,Samsung,Android 14
+97b0f0eb0f95e8a18b768e1fa5c66960,,,(direct),(none),United States,Samsung,Android 13
+01744516b214e4abc0f4ce853fa8010a,,,,organic,United States,Samsung,Android 13
+0d8d0a0ed35a42beda33546068328347,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 13
+a3380a7505e685316b88f99dde5521ac,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 13
+c56143ae1a04db50837ab1d83e735e89,,,(direct),(none),United States,Samsung,Android 13
+ae5286d05b48aeba4c3a49eebf4a5a07,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+88a60bef7dafcc8d1e0ddb25bc8762a8,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+47a51d754e46a533b19fe95279c38dfc,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+031c7309ff2d311d0942b147bc4dbd03,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+78a142ecd43fb9ab4fd7ee5ebd66cf72,,,,organic,United States,Samsung,Android 14
+ad98cad4b6fac8e205ecdeb957cf2d49,,,HEX (GA) - US #hybridROAS,cpc,United States,Samsung,Android 14
+c6ae42ced73f7a912aa83f15b8e44112,,,,organic,France,Samsung,Android 14
+2177655c7a73b4e8391031b80a614f02,,,HEX (GA) - T1 #hybridROAS,cpc,Canada,Motorola,Android 14
+490b9f4d3a8683891a71931ba6d75047,,,,organic,Brazil,Motorola,Android 14
+b305c3328ff99026e3d94cefee40200e,,,HEX (GA) - Globe #adROAS,cpc,Italy,Motorola,Android 7.1.1
+2A4E8B2CFB03471F87BE72B5158C9B89,,,(direct),(none),France,Apple,iOS 18.1.1
+434A9D518E8E4FB79248EECC3CBBD3D5,,,(direct),(none),United Kingdom,Apple,iOS 17.6.1
+61B228E7376E4C3AB135B070F7F9945C,,,(direct),(none),India,Apple,iOS 18.1.1
+680362C63700410B9E9D74B2988A59F5,,,(direct),(none),Argentina,Apple,iOS 18.1.1
+6D86A6CF8B954C20B4B1E5A52DCC9D4D,,,(direct),(none),Russia,Apple,iOS 17.6.1
+80E040B1B0A64A529BBF2ED882197169,,,(direct),(none),Germany,Apple,iOS 18.1.1
+8E0E39A786134291BFB286AEEAC45DEE,,,(direct),(none),United States,Apple,iOS 18.1.1
+923F8794CF214A2BB55240C3A91243FD,,,(direct),(none),Australia,Apple,iOS 17.5.1
+B672F33066C54EA58C37784E992F1043,,,(direct),(none),Russia,Apple,iOS 18.1.1
+C412307AE4D044C786B9BF76DA546879,,,(direct),(none),Russia,Apple,iOS 17.6.1
+D2850F1E4B374A1B8603F2BE219A998D,,,(direct),(none),Russia,Apple,iOS 18.1
+E1B9A88AAA714F7B90D7D69F4CB66A94,,,(direct),(none),Ukraine,Apple,iOS 17.6.1
+FA2F8B45A043432CA2758556084F4C76,,,(direct),(none),Slovenia,Apple,iOS 17.5.1
+3158D04C87514CC19B81A0C4ACF214AD,,,(direct),(none),United States,Apple,iOS 17.5.1
+6E1450BA163C41B5B6745FBB56C74F87,,,(direct),(none),Vietnam,Apple,iOS 16.6
+86CDCA4AAC444663849BACB7E8B28481,,,(direct),(none),Russia,Apple,iOS 18.1.1
+C37B597C2A43409499D617F24C9B5473,,,(direct),(none),France,Apple,iOS 18.1.1
+C9520D074EC1443D872471A1A7157A47,,,(direct),(none),Netherlands,Apple,iOS 16.3.1
+CC302A63C6AE452EB914ED0F137079CF,,,(direct),(none),France,Apple,iOS 17.6.1
+0F4EC033D4BE401DB84F382AD1194306,,,(direct),(none),United States,Apple,iOS 18.2
+1042A9E6373946C7BCC6E82AC7D22861,,,(direct),(none),Spain,Apple,iOS 17.6.1
+1F5C8BCAE9B546659A53A2E453C88DC9,,,(direct),(none),Poland,Apple,iOS 18.1.1
+2D68200802394FBDB4A755A03E211094,,,(direct),(none),Thailand,Apple,iOS 18.1.1
+4260CA287A6C4C68AC813E635FA98182,,,(direct),(none),Czechia,Apple,iOS 18.1.1
+55CC773AE018459CBA3334F0CE92B48C,,,(direct),(none),United States,Apple,iOS 18.1.1
+62D94907D3114D69A8ACF20642B8E88E,,,(direct),(none),United States,Apple,iOS 18.1.1
+6CAB501CC9B64E1C8150076ABE929A5F,,,(direct),(none),Türkiye,Apple,iOS 18.1.1
+724B44E14D1E45979A3AA450AB5477C0,,,(direct),(none),United Kingdom,Apple,iOS 18.1.1
+75C87FAFC6ED4AF5B30A3FCA28DF6E64,,,(direct),(none),United States,Apple,iOS 16.1
+83460D9497BE455DA4E9FFFA015ECBCE,,,(direct),(none),United States,Apple,iOS 18.2
+8868BFEDAE28475C966744D6338E22E8,,,(direct),(none),Switzerland,Apple,iOS 18.1.1
+C34D1C87F1FB4C8F9E1F14D6E963B59B,,,(direct),(none),Romania,Apple,iOS 15.1.1
+C9535A8EEE6444CABDEF0B72171F69FE,,,(direct),(none),Russia,Apple,iOS 18.2.1
+E2D37F76D5254A55A38368059EE01CDC,,,(direct),(none),United States,Apple,iOS 16.0.3
+ED663BF55A814E099E69AD0DA76711F6,,,(direct),(none),Russia,Apple,iOS 18.1.1
+F0406D5F0DBC414480783723B4DDB001,,,(direct),(none),Mexico,Apple,iOS 18.1.1
+0EF7FAF228D64FDA94887BECA9B28403,,,(direct),(none),France,Apple,iOS 17.6.1
+21C61EAD3A46459599E5A5BC0C343201,,,(direct),(none),Canada,Apple,iOS 18.1.1
+B881BBE19D67416CBA0EBEBEC4278387,,,(direct),(none),Russia,Apple,iOS 17.2.1
+C8668C3517F14BE796778306CD9969B9,,,(direct),(none),United States,Apple,iOS 17.5.1
+2204B22D70A94BE48D2FBE2663CF6555,,,(direct),(none),United Kingdom,Apple,iOS 17.6.1
+472AA3439B9F42918CE33934572EB1B9,,,(direct),(none),Russia,Apple,iOS 18.1.1
+B81B865DFB6D401DA874A71791008DAC,,,(direct),(none),Russia,Apple,iOS 18.2.1
+D01CC9C3AFA64BF0B41A588393331D27,,,(direct),(none),United States,Apple,iOS 18.1.1
+EAEDC7D11C8C428587EEEEE0E75B6B07,,,(direct),(none),United States,Apple,iOS 18.1.1
+9B5BC3EA9F11473A8BCB7300693748DA,,,(direct),(none),Japan,Apple,iOS 15.8.3
+4088DB36DEA74BDF96329387BC99B99E,,,(direct),(none),United Kingdom,Apple,iOS 17.6.1
+E5E96D98F87741F8A638DD309D4D4C05,,,(direct),(none),Italy,Apple,iOS 16.3.1
+50ADB7B5972D4B20AEAB4E2A3E0DF918,,,(direct),(none),Laos,Apple,iOS 17.1.2
+5D30FDA363AE48A5BC20264EF40F24C8,,,(direct),(none),Slovakia,Apple,iOS 17.3.1
+A555132FEAF1425FA4FDE8CF4523BD3F,,,(direct),(none),Ukraine,Apple,iOS 17.4.1
+9df07798d31db7ed0682e8ebc65d79ce,,,(direct),(none),United States,Motorola,Android 14
+0b7dbc45ebda100c43af3e26b26eec66,,,,organic,Russia,Xiaomi,Android 14
+6e821a1cbe74a5350f1a26a3b5360986,,,,organic,Russia,Xiaomi,Android 14
+1a4870b6e102c3ee0e53c719fcb59acb,,,HEX (GA) - Globe #adROAS,cpc,Iran,Xiaomi,Android 13
+296168086a1c6d8596cedacaf5fc2a4a,,,(direct),(none),Algeria,Xiaomi,Android 13
+40e43bb31b1b561150c5d30284d43897,,,,organic,Serbia,Xiaomi,Android 11
+9c0ec8108cacf6caf9daaf5e9e0ec152,,,,organic,Russia,Xiaomi,Android 13
+f3b112cc48010ac1e5bb79d42c7bdc13,,,,organic,Russia,Xiaomi,Android 14
+db753eabb6224bde87350b46ba5e2f0f,,,,organic,Italy,Xiaomi,Android 13
+52fea555fe75d8f8b12fb2bbd2463bdf,,,,organic,Russia,Xiaomi,Android 13
+9eb6ea91ec0091b5137d9ac45bf99af1,,,,organic,Russia,Xiaomi,Android 13
+ac3f35361bfa0456139cd224e08da9d9,,,,organic,Russia,Xiaomi,Android 13
+c73b14699fae198879048c0bf43304ca,,,,organic,Russia,Xiaomi,Android 13
+f000097f1c1734d7077b12e10e79e409,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Xiaomi,Android 14
+dc1c0ef74dd772210eae7001d3622541,,,HEX (GA) - Globe #adROAS,cpc,Slovakia,Xiaomi,Android 14
+66ecf13599715f1a28e32a516e813cbf,,,,organic,Russia,Xiaomi,Android 14
+a94dfec4cc275a5e585e7cb2fed02bb1,,,,organic,Russia,Xiaomi,Android 14
+83f3273d01bb548db4396e5938bcbc0a,,,,organic,Peru,Xiaomi,Android 14
+18f9443b39cd67381b3ac599e594fa70,,,,organic,Russia,Xiaomi,Android 13
+74ac670da9147628160d83dfc17ae0fe,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 14
+d4be4c83cc109608972514e3c2d7ede1,,,HEX (GA) - Globe #adROAS,cpc,Norway,Xiaomi,Android 13
+2bd68899cd985750933c0064e6f4f229,,,,organic,Germany,Xiaomi,Android 14
+d8123b264a992d12f5013625bc35b85e,,,,organic,Iran,Xiaomi,Android 15
+50659d1100a478178921bbd2e97db1cf,,,,organic,France,Xiaomi,Android 14
+b442b8cd54f49d0e2d57902a04ac1d04,,,,organic,Brazil,Xiaomi,Android 14
+114807fad80efd9ac7151c77d58e3a1c,,,,organic,Czechia,Xiaomi,Android 13
+1d0e6b0c72d65564c898465061a8f1ec,,,,organic,Russia,Xiaomi,Android 13
+65059c6f2e766b3d94e4b2c9909bb087,,,,organic,Russia,Xiaomi,Android 13
+de325d381d057823347c9fe7888ee37f,,,,organic,Russia,Xiaomi,Android 13
+0a07fc3983b4195e604046444d0e29f0,,,,organic,Russia,Xiaomi,Android 14
+c10c28a99b5525db95260146a7021072,,,,organic,Czechia,Xiaomi,Android 14
+f0b96dc11dae39da120e0570b034575f,,,,organic,Russia,Xiaomi,Android 14
+3b9c7a98e67af8d1ba118d4f0a67b288,,,,organic,Brazil,Xiaomi,Android 14
+c656ab38db49b5f5a3f9c5d1b751e11e,,,,organic,Netherlands,Xiaomi,Android 14
+f631a3eb64d6d9e5544338d40692a6bd,,,HEX (GA) - Globe #adROAS,cpc,Argentina,Xiaomi,Android 14
+16204d5c08eeef8d1d8f3f2e6dcf9fe5,,,,organic,Brazil,Xiaomi,Android 14
+849e757ba5b772d8b056e1ce40128dba,,,,organic,Russia,Xiaomi,Android 14
+10223901c720ee7aac20e414b7687ce3,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Xiaomi,Android 14
+49b273666d7cf6e9eae33b3bf2a0d1c8,,,,organic,Vietnam,Xiaomi,Android 14
+18bce19c8da3524dd1087183d2d9ecf3,,,,organic,Russia,Xiaomi,Android 15
+3106cbf440524ff21590e32120f0bd55,,,,organic,Poland,Xiaomi,Android 14
+4a5185430e88c59cf1132ed75b6c3827,,,,organic,Russia,Xiaomi,Android 13
+933c57bae5b4ea63dd18192021a9870a,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 13
+82d775d4feec795edf455330cff4085e,,,,organic,Russia,Xiaomi,Android 14
+d908825f2c1c8da31f20aec99f42c91c,,,,organic,Singapore,Xiaomi,Android 14
+e5e78313fa863e7b3818c81bca617ba5,,,HEX (GA) - Globe #adROAS,cpc,Indonesia,Xiaomi,Android 14
+eda199875bfed44a3bbdaa07f2e19bb9,,,,organic,Russia,Xiaomi,Android 14
+72c4dbeb7174d4487e72ed6ffe405f6b,,,,organic,Germany,Xiaomi,Android 14
+abe93627b9d42eb3b6771abfc4ba43d3,,,,organic,Yemen,Xiaomi,Android 13
+3b6d602df801a1ca9e2a3b7a057c7627,,,,organic,Russia,Xiaomi,Android 14
+7868f4a8c29144a09b25f3a66fbe01af,,,,organic,Hungary,Xiaomi,Android 14
+8f21bacafc1dbcb0afdcc971546b8758,,,,organic,Philippines,Xiaomi,Android 14
+b2b3f3baa389f1d7d1d563e603e97651,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 14
+1506071a8797e811ceaad69134a38aea,,,,organic,Brazil,Xiaomi,Android 15
+a8bee34e5a7356ea46b0f647b95af155,,,,organic,Paraguay,Xiaomi,Android 15
+10ac1ea01ab2e1ffed7bf650267b3208,,,,organic,Russia,Xiaomi,Android 13
+477b85c67886f13aed77cffdb4c5002d,,,,organic,Brazil,Xiaomi,Android 13
+ce1167ad0309de72789948efe0860f51,,,,organic,Myanmar (Burma),Xiaomi,Android 14
+261e0a216bc9e0fedb5e9338e4af9534,,,,cpc,Germany,Xiaomi,Android 14
+2dfa21057871c8599f2f785fea784143,,,,organic,Russia,Xiaomi,Android 13
+61aba03ad6f90cb44fc4b3d9397e8453,,,,organic,France,Xiaomi,Android 14
+6b454243573258a5627c807cfa8bf027,,,,organic,Ukraine,Xiaomi,Android 15
+77db0588f480d3d21d7096705a8ffb73,,,,organic,Russia,Xiaomi,Android 14
+7986d729178e18fb7a0f8cd5f6a2bae6,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 15
+21f6535939170f547c17716b8d03ccc6,,,,organic,Russia,Xiaomi,Android 14
+2a06ff24ab99346c87d6995bb0515233,,,,organic,Russia,Xiaomi,Android 14
+7f4229d8148d194f3b67c070f2cd5518,,,HEX (GA) - Globe #adROAS,cpc,Armenia,Xiaomi,Android 13
+a906fec61000b5913455b57c55c4f893,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 15
+ad27683ea7cab5427de5836bcfc220c5,,,,organic,Russia,Xiaomi,Android 14
+471ae7cb68c254e7fa7bb5105a0dbad3,,,,organic,Belarus,Xiaomi,Android 14
+140ac9ee4e7596f08b0ba709d2ace679,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 13
+18c05cd139e34aa737382abe59464def,,,,organic,Russia,Xiaomi,Android 14
+431c8bbf1aa9fb8b46eb23bfe843fa43,,,(direct),(none),Poland,Xiaomi,Android 14
+7100a116e86bd632e559a5b132727183,,,,organic,Indonesia,Xiaomi,Android 14
+7100a116e86bd632e559a5b132727183,,,,organic,Indonesia,Xiaomi,Android 14
+9daab018a528b4047b77f549f4d0efb3,,,,organic,Russia,Xiaomi,Android 14
+12f21698b421ee5a084008717497e12a,,,(direct),(none),Czechia,Xiaomi,Android 14
+484aaa6a658b79d1dd3267ca4028a275,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 14
+a8c8fb31e294b7002dbb61deed34758c,,,,organic,France,Xiaomi,Android 14
+f7b9f5cb4e3583cb4777284dffaa0b73,,,,organic,Russia,Xiaomi,Android 14
+01e838945e68ad010546b6601c783dc9,,,,organic,Russia,Xiaomi,Android 14
+02bf761f62d4813feaada509d1a9ed5b,,,,organic,Indonesia,Xiaomi,Android 13
+0f304911a274429ff55294718108565e,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 15
+21d8a9253e5211c184ee350aa9091064,,,,organic,Russia,Xiaomi,Android 14
+436beb01fef480ad411145b25d22f3ff,,,,organic,Russia,Xiaomi,Android 14
+44e1a8523d5ee0d9f7d98b8f44266112,,,,organic,Hungary,Xiaomi,Android 13
+46af6a2035592f06d8d99178bcd10e45,,,,organic,Russia,Xiaomi,Android 14
+50141afcac1b46e78e8efeb8cab6eb94,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Xiaomi,Android 14
+8667c626adbcf055bde1f5e3686ceeeb,,,,cpc,France,Xiaomi,Android 14
+a88ebbed5952b9ca4e69e225ff19166a,,,,organic,Ukraine,Xiaomi,Android 14
+d98b1373e40ccc9e89d84115dbcb43e3,,,,organic,Russia,Xiaomi,Android 13
+a9770fba83549a73fa226405668d930a,,,,organic,Germany,Xiaomi,Android 14
+01ea40496785600cf0b8d02f63a6d9f5,,,,organic,Russia,Xiaomi,Android 14
+ddc4297c4c622c4e7072f830f3dd8ee3,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 14
+86467d40255981f1cfda761bad9d1388,,,,organic,Russia,POCO,Android 14
+1a81d3f1a50352f2b53524cb20841933,,,,organic,Germany,Xiaomi,Android 14
+b5b246a1b578ff339f6cfd799b492448,,,HEX (GA) - Globe #adROAS,cpc,Hungary,Xiaomi,Android 14
+0a4307a70fa3428cf6e7a3752dd14088,,,,organic,Indonesia,Xiaomi,Android 14
+131b07124fa09419ad15ca1b0b82f683,,,HEX (GA) - Globe #adROAS,cpc,Colombia,Xiaomi,Android 14
+2bdaca64a2253c359dd759391bb02a17,,,,cpc,Spain,Xiaomi,Android 14
+2c07b345015a0f524255ec0a9e68f995,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Xiaomi,Android 14
+0711e8893f9d4e316c6554319cbd3041,,,HEX (GA) - Globe #adROAS,cpc,Russia,Xiaomi,Android 13
+0a28b8af4780bc85a353a190815ebdc0,,,,organic,Ukraine,Xiaomi,Android 13
+177ff5ae6da9c6c2499c7f9deab82750,,,HEX (GA) - Globe #adROAS,cpc,Latvia,Xiaomi,Android 13
+ca5ca727c9b97c287192d5d2ea3a129d,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 13
+ce81b0d464d07701e03e2a5d63788201,,,,organic,Russia,Xiaomi,Android 14
+dac56a4b0488d6e6b994c1b33d716d0f,,,,organic,Russia,Xiaomi,Android 14
+3f86cd103b7e26dec72e663a960916b3,,,,organic,Russia,Xiaomi,Android 14
+6e09b1f8c653c8b2172dbe619981a974,,,,organic,India,Xiaomi,Android 14
+22bc274dd38222c80e455833f8a8c5ac,,,,organic,Mexico,Xiaomi,Android 14
+247a43e9fb8d0f06a6bd7a657feeb368,,,,organic,Russia,Xiaomi,Android 14
+169cf98e549cf19c02901f30eace48f8,,,(direct),(none),Poland,Xiaomi,Android 14
+fda182cee1005270d1b02a4377898cd3,,,HEX (GA) - Globe #adROAS,cpc,Uzbekistan,Xiaomi,Android 15
+75031d916bb9aff1f7795ef2b765857b,,,(direct),(none),Philippines,Xiaomi,Android 14
+1a6b36d59a7d28cdc463f3c239f0c483,,,HEX (GA) - Globe #adROAS,cpc,Hong Kong,Xiaomi,Android 15
+6159a99896f72598de37c727429ebee1,,,HEX (GA) - Globe #adROAS,cpc,Malaysia,Xiaomi,Android 14
+e34560ae99658da261c193d5456ff18a,,,,organic,Spain,Xiaomi,Android 15
+fb8707a9d3a4bd986e42c2789e69fadd,,,,cpc,Germany,Xiaomi,Android 14
+354d23f440b216c35854ea8551346e93,,,HEX (GA) - Globe #adROAS,cpc,Thailand,Xiaomi,Android 14
+40ed1fd3c98e08efe35557441d9324a2,,,,organic,Russia,Xiaomi,Android 11
+4bd2580ce5d7ee3816a2e4f78cb4c1e3,,,,cpc,Poland,Xiaomi,Android 13
+53d4d501a0da708f1c7b22e5373b3e1b,,,,organic,Russia,Xiaomi,Android 11
+b44a5943292638a76578334827b5b876,,,HEX (GA) - Globe #adROAS,cpc,Czechia,Xiaomi,Android 12
+b69b65e428101b2edcd89d518b787b9f,,,(direct),(none),Russia,Xiaomi,Android 11
+cf87e5eaaf76ea83236d48d607c46a98,,,,organic,Russia,Xiaomi,Android 11
+019a637a771739d744e4a08ab6a76958,,,,organic,Russia,Xiaomi,Android 10
+08d36825f9686b06fa4bc73aeab717fa,,,,organic,Russia,Xiaomi,Android 10
+1fc3405e3444881893fd868ae91da2d9,,,,organic,Russia,Xiaomi,Android 11
+c999f2503bb3c8d5761487f13384e5c7,,,,organic,Russia,Xiaomi,Android 10
+d8405b15f327a3238c852048e365c5ea,,,,organic,Czechia,Xiaomi,Android 11
+df38f55238f2b33d58d5584eefcfed57,,,,organic,Russia,Xiaomi,Android 10
+ec1b09c3c25e61dc77c79a8c2737c07e,,,,organic,Czechia,Xiaomi,Android 10
+94a021e604f09e5978f33c398a17be81,,,HEX (GA) - Globe #adROAS,cpc,Thailand,Xiaomi,Android 12
+564a4d730f7cdd62a55ccf8e354e11e8,,,,organic,Indonesia,Xiaomi,Android 10
+db3a474ee3da9b202473c3ecdfb60a84,,,,organic,Belarus,Xiaomi,Android 12
+decfc642fb93e01f086b8dacb6632ddd,,,HEX (GA) - Globe #adROAS,cpc,Uruguay,Xiaomi,Android 12
+f6a65b543bb4409b23b03752f3aaa72e,,,,organic,Russia,Xiaomi,Android 10
+1c675d421df26b2693630463580d62cc,,,HEX (GA) - Globe #adROAS,cpc,France,Xiaomi,Android 13
+62998b1e9bd44ef581377447bf7f6f77,,,,organic,Russia,Xiaomi,Android 13
+79ed685ca0c35b831d1a26574a4d0263,,,,organic,Ukraine,Xiaomi,Android 13
+b977a455ab6179c9b0ba12e54492b829,,,,organic,Russia,Xiaomi,Android 13
+f9818ef777cdfc761a4235cfc5f0eb90,,,HEX (GA) - Globe #adROAS,cpc,Russia,Xiaomi,Android 13
+57e3c1c7b4e1d73121c33eb8a4f0d4f5,,,,organic,Russia,Xiaomi,Android 11
+657c70e3627fe4a4223a85f97bc1947a,,,,organic,Russia,Xiaomi,Android 12
+81631261ce5df65a3e391a64c17396e1,,,HEX (GA) - Globe #adROAS,cpc,Bulgaria,Xiaomi,Android 11
+884e25039409ab63f9cf38b893c50398,,,,organic,Russia,Xiaomi,Android 11
+c216a5c3a80afb9e35da787a40e503a3,,,,organic,Chile,Xiaomi,Android 12
+f4aaf697150a5aa77c6ae7a49f8e41e5,,,,organic,Russia,Xiaomi,Android 12
+ad0acbd24f926db54ec2186aa10b461b,,,HEX (GA) - Globe #adROAS,cpc,Belarus,POCO,Android 13
+b06e519ffc4b9de2bdb54081f485e290,,,,organic,Peru,Motorola,Android 11
+aa603fee8cb37b019c888146bc912685,,,,organic,Brazil,Motorola,Android 11
+a16aa919c48ec52daee46199858f6359,,,HEX (GA) - Globe #adROAS,cpc,United States,Google,Android 11
+7a5d75629fc49fdef948eb4ddabbd1bd,,,HEX (GA) - US #hybridROAS,cpc,United States,Google,Android 12
+4d29734e7c8dc004a9634c2f0e6e8a29,,,(direct),(none),Germany,Wiko,Android 10
+9cc72eadf84a2435720c39d2bde4035a,,,HEX (GA) - Globe #adROAS,cpc,United States,Dish,Android 11
+DA8C493C0A3F46EDA3E1BC1115F29570,,,(direct),(none),Germany,Apple,iOS 15.8.3
+fcbe4877beec10cf26dc309f0f4c9820,,,HEX (GA) - Globe #adROAS,cpc,Poland,Motorola,Android 12
+53f9ae1d745d5095f649518fe50c9cc3,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+73000a6b625831379885897459814da0,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+12a274cb75bc99e9bf37427c95331e5a,,,,organic,Poland,Motorola,Android 14
+adbf841c55e5aea3a361debcb8af2457,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Motorola,Android 14
+7a5b0a7171d45ac9bcd74135f4a7053e,,,HEX (GA) - Globe #adROAS,cpc,Mexico,Motorola,Android 14
+08a77aef3ccf4d7f1d57c2595f404170,,,,organic,Russia,Infinix,Android 12
+db8fa761cc373d056ae6002340b2c8c9,,,,organic,Russia,Infinix,Android 12
+cbe004b418f7517f5e611ef3c12a9307,,,HEX (GA) - Globe #adROAS,cpc,Canada,Google,Android 15
+650a87db26e67cffe3242717383581f7,,,HEX (GA) - Globe #adROAS,cpc,Türkiye,Casper,Android 8.1.0
+4a6e3b0329ca2a855cfd340460ccef09,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 12
+55326f891ca2ffe80c727a73db79c0f5,,,,organic,Namibia,Ulefone,Android 12
+2be4a267e36d3fe947b20f195cf752c5,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 11
+998a81d9335ab9be314433b7cd100852,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Motorola,Android 11
+fbfdb5c1253d232467f19baedb85a0db,,,HEX (GA) - Globe #adROAS,cpc,Brazil,Motorola,Android 11
+e7ddc7ac03902eb42ea161bef90244eb,,,,organic,Dominican Republic,Google,Android 15
+2693082fcafea606bbb8967a6ef8e859,,,HEX (GA) - Globe #adROAS,cpc,Ukraine,Xiaomi,Android 9
+5615a774cbe556a7eb39e54740577d01,,,,organic,Russia,Xiaomi,Android 10
+64439dfe29489007f3abf6c0bfdff6fb,,,,cpc,Portugal,Xiaomi,Android 10
+bd92d836971612165f6fe4b9de8e97e4,,,,organic,Russia,Xiaomi,Android 13
+1713f3a1fab0477e2ad9ead7782997f3,,,,organic,France,Xiaomi,Android 11
+6D43A288451E464190D160C39F8F0EE7,,,(direct),(none),France,Apple,iOS 16.7.10
+FA9B44098F7E4D3A85CF6AD3220082F2,,,(direct),(none),Uzbekistan,Apple,iOS 17.7.3
+55a7558c93147ca8f61fd89375839aeb,,,,organic,Argentina,Motorola,Android 10
+57154582fe9abbe25d5af1e664e9bb0e,,,,organic,Russia,Xiaomi,Android 11
+b4fe67dd83f5eff075efc8e0db5f0b9c,,,,organic,Greece,Xiaomi,Android 11
+c3a225290ff27a68ee43498c0c2df500,,,,organic,Portugal,Xiaomi,Android 11
+e4ddea9894abe9f52505042e81a45ef8,,,,organic,Germany,Xiaomi,Android 11
+0255f648966a8fbcbeb29c2e068c023d,,,,organic,Brazil,Xiaomi,Android 12
+05038cab1f1e766b76b64269825da8d0,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 11
+4A5FA35FCB2044F1B192EAB9F2EC7521,,,(direct),(none),Russia,Apple,iOS 18.1.1
+55BA048ADE59408D8C5C512D60F847D2,,,(direct),(none),South Korea,Apple,iOS 18.0
+A8EBD711C5D84804A867E9F135EF0A1B,,,(direct),(none),Vietnam,Apple,iOS 18.1.1
+833F1BDC73574A27BA7B0C80C2D4F667,,,(direct),(none),Uzbekistan,Apple,iOS 18.2.1
+B7C49D72211E4BE08B630E4BF246D56C,,,(direct),(none),Canada,Apple,iOS 18.1.1
+B8B9F2BC002741A2909D371529DE707D,,,(direct),(none),Argentina,Apple,iOS 18.2
+59D8890F24BE4E2CB94D6F4021D20024,,,(direct),(none),Russia,Apple,iOS 18.1.1
+ECEFE83C07C84AC692267A9DFC1F98B4,,,(direct),(none),United Kingdom,Apple,iOS 18.1.1
+09FFDB10CB164D1F80908194C096230D,,,(direct),(none),Russia,Apple,iOS 18.3
+5EC7ACE0A9FC4B61A753E8E38CAE7D49,,,(direct),(none),United States,Apple,iOS 17.6.1
+063D3A3C4C45478BB5D442255F9D9908,,,(direct),(none),Spain,Apple,iOS 18.2.1
+CD7A291D038F481EAFCC8B329D0794F0,,,(direct),(none),Austria,Apple,iOS 18.1.1
+F42E343B8FC34E578BE589DB9440ED89,,,(direct),(none),Czechia,Apple,iOS 18.1.1
+7D722535A42F4049B98D7793280981B3,,,(direct),(none),Vietnam,Apple,iOS 15.8
+B00F4B22DD914F0799B74E4E2CCF7CE8,,,(direct),(none),Brazil,Apple,iOS 16.7.10
+696c7281ae493d7dbe643a1d01622bfc,,,HEX (GA) - Globe #adROAS,cpc,Hungary,Motorola,Android 14
+248af4718a929f9aaf4bfcb3c6840108,,,HEX (GA) - US #hybridROAS,cpc,United States,Google,Android 15
+514af736b08e7b3ca22f769a4024dcc4,,,HEX (GA) - US #hybridROAS,cpc,United States,Google,Android 15
+0000A4768B5148CC89D6954B455A43CA,,,(direct),(none),Australia,Apple,iOS 18.1.1
+47384B65623A4869AF8741B0E0BB5807,,,(direct),(none),Germany,Apple,iOS 18.1.1
+540373887C404C46BE993B53D5A36A3B,,,(direct),(none),United States,Apple,iOS 17.5.1
+5A58D4D47DD7494DB139F98E37E57A65,,,(direct),(none),Colombia,Apple,iOS 18.1.1
+6D66C2E487A945B6904469CE994C4DC2,,,(direct),(none),Poland,Apple,iOS 17.6.1
+748D9003FD0342EB98793E420667F299,,,(direct),(none),Croatia,Apple,iOS 18.1.1
+A28476CE702E4D8D9F877214BB1FB82A,,,(direct),(none),United States,Apple,iOS 18.1.1
+F1F40A9AF9E547E883FAB8CF7406743F,,,(direct),(none),Czechia,Apple,iOS 18.1.1
+42CF4BB3B3FA460FB5CEB31B2D0174FE,,,(direct),(none),South Korea,Apple,iOS 18.1.1
+80CD4EE11C3C431F9823CBCA7DB1EA46,,,(direct),(none),United States,Apple,iOS 17.6.1
+9D8876862ED84B40B0892C54EF0FF1D3,,,(direct),(none),Germany,Apple,iOS 18.1.1
+13d279731e88324dd432a9818f9fcc50,,,HEX (GA) - Globe #adROAS,cpc,Poland,Motorola,Android 10
+c1f5c42db33e2aac834f0472f472fee8,,,,organic,Brazil,Motorola,Android 11
+1625eea780d4703c667a117da3ad93c5,,,,organic,Russia,Xiaomi,Android 12
+5465d2a779a0e633f85bf2c355c5a763,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 13
+04e7c22ad18102de24745b668ca4b03f,,,,organic,United States,Motorola,Android 13
+b8431bcb5e40b63bd79c129522a64d2f,,,,organic,India,Xiaomi,Android 10
+206a10e4ab5f0d910f082b8070092f66,,,HEX (GA) - Globe #adROAS,cpc,Russia,Xiaomi,Android 11
+2cc5f0fbe31e594dff2bbd0929e91531,,,HEX (GA) - Globe #adROAS,cpc,Moldova,Xiaomi,Android 9
+50879b0e71e16af2ee42c8cd4dbedd83,,,,organic,Czechia,Xiaomi,Android 11
+6739fd54dede45811a89ab741d7eb90b,,,,organic,Russia,Xiaomi,Android 10
+68d6ece7b71e31841291cd69d50cb2b2,,,HEX (GA) - Globe #adROAS,cpc,Russia,Xiaomi,Android 11
+8dbb59fb480fa4e5cae63add93b4b8ea,,,,organic,Russia,Xiaomi,Android 10
+fbfe30894f42d93cbff2ba1959973e7e,,,HEX (GA) - T1 #hybridROAS,cpc,Russia,Xiaomi,Android 9
+fbfe30894f42d93cbff2ba1959973e7e,,,HEX (GA) - T1 #hybridROAS,cpc,Russia,Xiaomi,Android 9
+fdc8db721ac013a5cca545aae51b7e86,,,HEX (GA) - Globe #adROAS,cpc,Poland,Xiaomi,Android 11
+48e112c28e4816ca40d562913a5f976a,,,(direct),(none),Germany,Xiaomi,Android 12
+637b3749afe5fd52511b56f2571961ef,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 12
+6fe3c3187a52167027752c22852e3240,,,,organic,France,Xiaomi,Android 12
+daed3e9862ced17901089320f137229a,,,HEX (GA) - Globe #adROAS,cpc,Belarus,Xiaomi,Android 12
+21cdb39af8187ad22e043f2b3eb9eb8e,,,(direct),(none),United States,Motorola,Android 14
+113435582C424DDCB9CCA1D6B556BCFF,,,(direct),(none),Russia,Apple,iOS 18.2
+210BD57E2E4F4869988E869A071C440A,,,(direct),(none),Russia,Apple,iOS 18.1.1
+BD5EF779CD2A43F1A294DAECF71759F7,,,(direct),(none),Palestine,Apple,iOS 18.1.1
+F0A2D3D3714E4A8D978E7F24E91AD44C,,,(direct),(none),United States,Apple,iOS 18.1.1
+F711A784042E4E35ABECF486EBBEB052,,,(direct),(none),Russia,Apple,iOS 18.1.1
+0BF3D45FAD04411E9C6F9E5FA35C273C,,,(direct),(none),United States,Apple,iOS 18.1.1
+0E90B212251C429A8770F1BC89422570,,,(direct),(none),Ukraine,Apple,iOS 18.1.1
+27CCCEBDCC1240B98693E6C3563ABDF9,,,(direct),(none),Spain,Apple,iOS 18.1.1
+877101660D61495784497F3DFB52E70B,,,(direct),(none),Russia,Apple,iOS 17.6.1
+C6BEAC75A0FF459AB4AA63956E341CBB,,,(direct),(none),Russia,Apple,iOS 18.1.1
+0F06DC05A36847C2BB03DD7875850659,,,(direct),(none),United States,Apple,iOS 17.6.1
+3BB2C7AF07FE435ABE9834B2BAB8CFE9,,,(direct),(none),United States,Apple,iOS 18.1.1
+75BAD5F2134E42AF9613E57BA2CB4B0C,,,(direct),(none),United States,Apple,iOS 18.1.1
+8E1987FDB8DA4E0EA06F6C1B4478E9D8,,,(direct),(none),Ukraine,Apple,iOS 17.6.1
+9CC4A38E06BF4FEC9EB3643B2645740D,,,(direct),(none),Australia,Apple,iOS 18.0.1
+D675871F03C0486B9C45741B250ACBFF,,,(direct),(none),Macao,Apple,iOS 16.0.3
+DCB0EF65F1D44A2D94A236C39A2118A9,,,(direct),(none),United States,Apple,iOS 18.1.1
+E72F7423306A438D96586702C8AC4645,,,(direct),(none),Czechia,Apple,iOS 18.1.1
+0FC1D7B07D194F9ABFBEE5BE21FBEDD5,,,(direct),(none),Singapore,Apple,iOS 18.0
+C1B8855342DC4B54B67039C24B936A75,,,(direct),(none),Australia,Apple,iOS 18.1.1
+261b918c515e4fc7526c9e3ec9b41813,,,HEX (GA) - T1 #hybridROAS,cpc,Canada,Motorola,Android 14
+423975250b73e26e897b8b57fbd418b4,,,,organic,United States,Motorola,Android 14
+743b40939a4408840e2ad33ded399edb,,,,organic,United States,Motorola,Android 14
+aa8cc75358c17456890e5342ee18a308,,,,organic,United States,Motorola,Android 14
+CA62A8F08FB042D897DE9619D41512D1,,,(direct),(none),United States,Apple,iOS 18.2.1
+21463D80D6074E3EB36C9FB0FA19118D,,,(direct),(none),Philippines,Apple,iOS 18.2
+222DF72033294BB0B644A72ED998DE49,,,(direct),(none),Germany,Apple,iOS 17.6.1
+43DD204C6D05481B988C78C8EE40A351,,,(direct),(none),Germany,Apple,iOS 18.2.1
+5A31343DED2C46D982320F3F0FF0027B,,,(direct),(none),United States,Apple,iOS 18.1.1
+86B4EFE5962C4737A303E805AD77E3AB,,,(direct),(none),United States,Apple,iOS 18.1.1
+635DA98FB5A243AFA3E3D44D2B885E39,,,(direct),(none),Canada,Apple,iOS 18.1.1
+DD3434E4AF9C4A949BE7488B7F6B1D31,,,(direct),(none),France,Apple,iOS 18.1.1
+2caccf5a69abb1327abf242f2e5656c0,,,HEX (GA) - Globe #adROAS,cpc,United States,Motorola,Android 11
+004c4686c50aeacb5c717d6ed3928f3d,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 13
+10481247d92fc6773985baa52a24e61a,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 12
+80940cb970999d3488ea8e86490b2a6b,,,,organic,United States,Motorola,Android 13
+33fe9b47fb452d4481d0a20ef0b344a0,,,,organic,Vietnam,Motorola,Android 12
+21d07672524c3be348545da6117769a4,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+48dfff4e10a25c8061b0734b7a60c88a,,,(direct),(none),United States,Motorola,Android 14
+8b3cb67b7f91511d1021cb0c96f6c763,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+bb110ad59bc4acebcfcc94353dcebc1a,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+476f6e93ed5eb45eb6d8aadd5e51614c,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+5973df59d2d90052d45a5a9cde5fb162,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+6c2b293342792842539e5935bed2e549,,,,organic,United States,Motorola,Android 14
+8413f733822770f68ce4576fca87b433,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 14
+30c07366a2bb0c21da4c0bc09aa72c20,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 13
+9841ef3dbb19fea9bd440568f316a2ae,,,HEX (GA) - US #hybridROAS,cpc,United States,Motorola,Android 13
+69423A351EFD48218E7D51F7CC2A8CF5,,,(direct),(none),United States,Apple,iOS 18.1.1
+9E57D2F29E284EEA8CD56184F86B4C8F,,,(direct),(none),Czechia,Apple,iOS 18.1.1
+A040CF2B08B143B2995EB970B57A3A15,,,(direct),(none),United States,Apple,iOS 18.1.1
+DAF6C92D44684BB2A41196081A4C7A81,,,(direct),(none),Sweden,Apple,iOS 18.1.1
+944C57CB75E84C0E90713D62D1263472,,,(direct),(none),Belgium,Apple,iOS 18.2.1
+C653D4A8C05E4455BFA06FCBE01EFBE2,,,(direct),(none),United Kingdom,Apple,iOS 18.1.1
+C4D1CD437FEC4CEFA01EABEC588BEEEF,,,(direct),(none),Japan,Apple,iOS 17.6.1
+4436f7d1f771ce2f0ba5443eed3c597e,,,(direct),(none),China,Xiaomi,Android 11
+F28FB404419F4B2B99D088A94CE06A2F,,,(direct),(none),United States,Apple,iOS 18.1.1
+8B5BC28B61FF4E708D7EC221AEB60554,,,(direct),(none),United States,Apple,iOS 18.1.1
+FCD5C987E1DA4A589D019772B3DC328D,,,(direct),(none),Spain,Apple,iOS 18.1.1
+FE7C5633E8CC47B4B5D587B28986FDD9,,,(direct),(none),United Kingdom,Apple,iOS 17.6.1
