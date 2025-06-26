@@ -4,6 +4,14 @@ import plotly.express as px
 import os
 from scipy.stats import ttest_ind
 import math
+from PIL import Image
+import base64
+from io import BytesIO
+
+def get_base64_image(img: Image.Image):
+    buffered = BytesIO()
+    img.save(buffered, format="PNG")
+    return base64.b64encode(buffered.getvalue()).decode()
 
 st.set_page_config(page_title="Experiment Dashboard", layout="wide")
 
@@ -37,8 +45,21 @@ else:
 
 # --- Sidebar ---
 with st.sidebar:
-    st.title("📈 A/B Testy")
-
+    logo_path = "logo2.png"
+    if os.path.exists(logo_path):
+        logo_img = Image.open(logo_path)
+        base64_logo = get_base64_image(logo_img)
+        st.markdown(
+            f"""
+            <div style="text-align: center; padding-bottom: 1rem;">
+                <img src="data:image/png;base64,{base64_logo}" style="width: 75%; max-width: 160px;" />
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.warning("Soubor 'logo2.png' nebyl nalezen.")
+    st.markdown("---")
     selected_game = st.selectbox("Vyber hru:", ["Hexapolis", "Age of Tanks", "Tanks Arena", "Spacehex", "Mecha Fortress"])
     st.markdown("---")
 
@@ -51,7 +72,7 @@ with st.sidebar:
         st.stop()
 
     experiment_ids = sorted([f for f in os.listdir(REPORTS_DIR) if os.path.isdir(os.path.join(REPORTS_DIR, f))])
-    selected_experiment = st.selectbox("Vyber experiment ID:", experiment_ids)
+    selected_experiment = st.selectbox("Vyber A/B test ID:", experiment_ids)
 
 # --- Metadata z SRM ---
 exp_row = srm_df[srm_df["experiment_number"] == selected_experiment]
