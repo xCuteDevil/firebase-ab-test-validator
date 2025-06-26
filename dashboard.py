@@ -2,16 +2,34 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
-from scipy.stats import ttest_ind
+from scipy.stats import ttest_ind, mannwhitneyu
 import math
 from PIL import Image
 import base64
 from io import BytesIO
+from typing import Tuple, Optional
 
 def get_base64_image(img: Image.Image):
     buffered = BytesIO()
     img.save(buffered, format="PNG")
     return base64.b64encode(buffered.getvalue()).decode()
+
+def load_srm_report(path: str) -> Tuple[pd.DataFrame, Optional[str]]:
+    if not os.path.exists(path):
+        return None, f"Soubor '{path}' nebyl nalezen."
+    
+    df = pd.read_csv(path)
+    required_columns = {"experiment_number", "first_seen", "p99_seen", "counts"}
+    missing = required_columns - set(df.columns)
+    if missing:
+        return None, f"Chybějící sloupce v SRM_Report.csv: {missing}"
+
+    df["experiment_number"] = df["experiment_number"].apply(lambda x: str(int(x)) if pd.notnull(x) else "")
+    df["start_date"] = pd.to_datetime(df["first_seen"])
+    df["end_date"] = pd.to_datetime(df["p99_seen"])
+    df["total_users"] = df["counts"].apply(lambda counts: sum(int(x.strip()) for x in counts.split(",")) if isinstance(counts, str) else 0)
+    
+    return df, None
 
 st.set_page_config(page_title="Experiment Dashboard", layout="wide")
 
@@ -28,20 +46,8 @@ experiment_names = {
     "46": "AA Test"
 }
 
-# --- Načti SRM report ---
-if os.path.exists(SRM_REPORT_PATH):
-    srm_df = pd.read_csv(SRM_REPORT_PATH)
-    required_columns = {"experiment_number", "first_seen", "p99_seen", "counts"}
-    if not required_columns.issubset(srm_df.columns):
-        st.error(f"Chybějící sloupce v SRM_Report.csv: {required_columns - set(srm_df.columns)}")
-        st.stop()
-    srm_df["experiment_number"] = srm_df["experiment_number"].apply(lambda x: str(int(x)) if pd.notnull(x) else "")
-    srm_df["start_date"] = pd.to_datetime(srm_df["first_seen"])
-    srm_df["end_date"] = pd.to_datetime(srm_df["p99_seen"])
-    srm_df["total_users"] = srm_df["counts"].apply(lambda counts: sum(int(x.strip()) for x in counts.split(",")) if isinstance(counts, str) else 0)
-else:
-    st.error("Soubor 'SRM_Report.csv' nebyl nalezen.")
-    st.stop()
+SRM_REPORT_PATH = "SRM_Report.csv"
+srm_df, srm_error = load_srm_report(SRM_REPORT_PATH)
 
 # --- Sidebar ---
 with st.sidebar:
@@ -62,7 +68,10 @@ with st.sidebar:
     st.markdown("---")
     selected_game = st.selectbox("Vyber hru:", ["Hexapolis", "Age of Tanks", "Tanks Arena", "Spacehex", "Mecha Fortress"])
     st.markdown("---")
-
+    selected_test = st.selectbox(
+        "Statistický test pro výpočet p-value:",
+        ["Welchův t-test", "Mann–Whitney U test"]
+    )
     selected_mode = st.radio("Typ metriky:", ["Revenue", "Revenue per User"])
     selected_metric = st.selectbox("Zobrazit metriku:", ["Total Revenue (IAP + Ad)", "Ad Revenue", "IAP Revenue"])
     st.markdown("---")
@@ -174,38 +183,58 @@ if data:
     full_data = pd.concat(data, ignore_index=True).fillna(0)
     full_data["total_revenue"] = full_data.get("total_ad_revenue", 0) + full_data.get("total_iap_revenue", 0)
 
+    # Urči správný sloupec podle vybrané metriky
+    metric_column = {
+        "Total Revenue (IAP + Ad)": "total_revenue",
+        "Ad Revenue": "total_ad_revenue",
+        "IAP Revenue": "total_iap_revenue"
+    }.get(selected_metric, "total_revenue")
+
     st.subheader("📋 Souhrnná tabulka variant")
     summary = full_data.groupby("experiment_group").agg(
         Users=('user_pseudo_id', 'nunique'),
         Total_Revenue=('total_revenue', 'sum'),
-        Revenue_per_User=('total_revenue', 'mean'),
-        Std_Dev=('total_revenue', 'std')
-    )
+        Ad_Revenue=('total_ad_revenue', 'sum'),
+        IAP_Revenue=('total_iap_revenue', 'sum'),
+        Revenue_per_User=(metric_column, 'mean'),
+        Std_Dev=(metric_column, 'std')
+    ).reset_index()
 
     baseline_group = sorted(summary.index)[0]
     baseline_mean = summary.loc[baseline_group, "Revenue_per_User"]
     summary["Rozdíl od baseline"] = summary["Revenue_per_User"].apply(lambda x: "0.00%" if x == baseline_mean else f"{((x - baseline_mean) / baseline_mean) * 100:+.2f}%")
 
     p_values = []
-    baseline_data = full_data[full_data["experiment_group"] == baseline_group]["total_revenue"]
+
+    baseline_data = full_data[full_data["experiment_group"] == baseline_group][metric_column]
+
     for group in summary.index:
         if group == baseline_group:
             p_values.append("—")
         else:
-            test_data = full_data[full_data["experiment_group"] == group]["total_revenue"]
-            _, p = ttest_ind(baseline_data, test_data, equal_var=False)
-            p_values.append(f"{p:.2f}" if p >= 0.0001 else "<0.0001")
+            test_data = full_data[full_data["experiment_group"] == group][metric_column]
+            if selected_test == "Welchův t-test":
+                _, p = ttest_ind(baseline_data, test_data, equal_var=False)
+            elif selected_test == "Mann–Whitney U test":
+                _, p = mannwhitneyu(baseline_data, test_data, alternative="two-sided")
+            else:
+                p = float("nan")
+            p_values.append(f"{p:.3f}" if p >= 0.0001 else "<0.0001")
     summary["P-value"] = p_values
 
     summary = summary.reset_index().rename(columns={
         "experiment_group": "Varianta",
         "Users": "Počet uživatelů",
         "Total_Revenue": "Total revenue",
+        "Ad_Revenue": "Ad revenue",
+        "IAP_Revenue": "IAP revenue",
         "Revenue_per_User": "Revenue / user",
         "Std_Dev": "Standardní odchylka"
     })
     summary["Revenue / user"] = summary["Revenue / user"].apply(lambda x: f"${x:.2f}")
     summary["Total revenue"] = summary["Total revenue"].apply(lambda x: f"${x:,.2f}")
+    summary["Ad revenue"] = summary["Ad revenue"].apply(lambda x: f"${x:,.2f}")
+    summary["IAP revenue"] = summary["IAP revenue"].apply(lambda x: f"${x:,.2f}")
     summary["Standardní odchylka"] = summary["Standardní odchylka"].apply(lambda x: f"${x:.2f}")
     st.dataframe(summary, use_container_width=True, hide_index=True)
 
@@ -243,7 +272,6 @@ if data:
         color="Varianta",
         height=500
     )
-
 
     # Nastavení osy
     if use_log_y:
