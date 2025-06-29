@@ -8,6 +8,8 @@ from PIL import Image
 import base64
 from io import BytesIO
 from typing import Tuple, Optional
+import difflib
+
 
 def get_base64_image(img: Image.Image):
     buffered = BytesIO()
@@ -30,6 +32,11 @@ def load_srm_report(path: str) -> Tuple[pd.DataFrame, Optional[str]]:
     df["total_users"] = df["counts"].apply(lambda counts: sum(int(x.strip()) for x in counts.split(",")) if isinstance(counts, str) else 0)
     
     return df, None
+
+def winsorize_series(series: pd.Series, lower_pct: float, upper_pct: float):
+    lower = series.quantile(lower_pct / 100)
+    upper = series.quantile(1 - upper_pct / 100)
+    return series.clip(lower=lower, upper=upper)
 
 st.set_page_config(page_title="Experiment Dashboard", layout="wide")
 
@@ -72,6 +79,11 @@ with st.sidebar:
         "Statistický test pro výpočet p-value:",
         ["Welchův t-test", "Mann–Whitney U test"]
     )
+    st.markdown("---")
+    filter_positive_revenue = st.sidebar.checkbox("Zobrazit pouze hráče s revenue > 0", value=False)
+    winsor_pct = st.slider("Winsorizovat hodnoty na percentily:", min_value=0.0, max_value=3.0, value=0.0, step=0.05,
+                        help="Odstraní extrémní hodnoty mimo zadané spodní a horní percentily (např. 5% a 95%). 0 = žádné ořezání.")
+
     selected_mode = st.radio("Typ metriky:", ["Revenue", "Revenue per User"])
     selected_metric = st.selectbox("Zobrazit metriku:", ["Total Revenue (IAP + Ad)", "Ad Revenue", "IAP Revenue"])
     st.markdown("---")
@@ -112,27 +124,37 @@ st.markdown("---")
 data = []
 cumulative_by_day = []
 experiment_path = os.path.join(REPORTS_DIR, selected_experiment)
+
 if os.path.exists(experiment_path):
     files = sorted([f for f in os.listdir(experiment_path) if f.endswith(".csv")])
     for d_index, f in enumerate(files):
         df = pd.read_csv(os.path.join(experiment_path, f)).fillna(0)
         df["den"] = d_index
-        df["datum"] = pd.to_datetime(exp_row.iloc[0]["start_date"]) + pd.to_timedelta(d_index, unit="d")  # nový sloupec
+        df["datum"] = pd.to_datetime(exp_row.iloc[0]["start_date"]) + pd.to_timedelta(d_index, unit="d")
         df["total_revenue"] = df.get("total_ad_revenue", 0) + df.get("total_iap_revenue", 0)
+
+        # Urči metriku bez winsorizace – ta bude aplikována globálně později
         if selected_metric == "Total Revenue (IAP + Ad)":
             df["selected_value"] = df["total_revenue"]
         elif selected_metric == "Ad Revenue":
             df["selected_value"] = df.get("total_ad_revenue", 0)
         elif selected_metric == "IAP Revenue":
             df["selected_value"] = df.get("total_iap_revenue", 0)
+        else:
+            df["selected_value"] = df["total_revenue"]
+
         cumulative_by_day.append(df[["experiment_group", "user_pseudo_id", "selected_value", "den", "datum"]])
         data.append(df)
 else:
     st.warning("Data pro tento experiment nejsou dostupná.")
 
+
 # --- Cumulative graf ---
 if cumulative_by_day:
     full_daily = pd.concat(cumulative_by_day, ignore_index=True)
+    if winsor_pct > 0:
+        full_daily["selected_value"] = winsorize_series(full_daily["selected_value"], winsor_pct, winsor_pct)
+
     full_daily.sort_values(by=["experiment_group", "den"], inplace=True)
 
     user_counts = full_daily.groupby(["den", "experiment_group"])['user_pseudo_id'].nunique().reset_index(name="new_users")
@@ -180,15 +202,23 @@ if cumulative_by_day:
 
 # --- Souhrnná tabulka + Boxplot + Histogram ---
 if data:
-    full_data = pd.concat(data, ignore_index=True).fillna(0)
-    full_data["total_revenue"] = full_data.get("total_ad_revenue", 0) + full_data.get("total_iap_revenue", 0)
-
     # Urči správný sloupec podle vybrané metriky
     metric_column = {
         "Total Revenue (IAP + Ad)": "total_revenue",
         "Ad Revenue": "total_ad_revenue",
         "IAP Revenue": "total_iap_revenue"
     }.get(selected_metric, "total_revenue")
+
+    full_data = pd.concat(data, ignore_index=True).fillna(0)
+    if filter_positive_revenue:
+        full_data = full_data[full_data[metric_column] > 0]
+    full_data["total_revenue"] = full_data.get("total_ad_revenue", 0) + full_data.get("total_iap_revenue", 0)
+
+    # Aplikace winsorizace na hlavní metriku (pro grafy)
+    if winsor_pct > 0:
+        full_data[metric_column] = winsorize_series(full_data[metric_column], winsor_pct, winsor_pct)
+
+
 
     st.subheader("📋 Souhrnná tabulka variant")
     summary = full_data.groupby("experiment_group").agg(
@@ -198,28 +228,48 @@ if data:
         IAP_Revenue=('total_iap_revenue', 'sum'),
         Revenue_per_User=(metric_column, 'mean'),
         Std_Dev=(metric_column, 'std')
-    ).reset_index()
+    )
+
+    # Extra statistiky – zvlášť
+    medians = full_data.groupby("experiment_group")[metric_column].median().rename("Median")
+    q1 = full_data.groupby("experiment_group")[metric_column].quantile(0.25).rename("Q1")
+    q3 = full_data.groupby("experiment_group")[metric_column].quantile(0.75).rename("Q3")
+
+    # Spoj dohromady
+    summary = summary.join([medians, q1, q3])
+
 
     baseline_group = sorted(summary.index)[0]
     baseline_mean = summary.loc[baseline_group, "Revenue_per_User"]
     summary["Rozdíl od baseline"] = summary["Revenue_per_User"].apply(lambda x: "0.00%" if x == baseline_mean else f"{((x - baseline_mean) / baseline_mean) * 100:+.2f}%")
 
+    baseline_raw = full_data[full_data["experiment_group"] == baseline_group][metric_column]
+
     p_values = []
-
-    baseline_data = full_data[full_data["experiment_group"] == baseline_group][metric_column]
-
     for group in summary.index:
         if group == baseline_group:
             p_values.append("—")
         else:
-            test_data = full_data[full_data["experiment_group"] == group][metric_column]
+            test_raw = full_data[full_data["experiment_group"] == group][metric_column]
+
+            # Aplikuj winsorizaci, pokud je nastavena
+            if winsor_pct > 0:
+                baseline_data = winsorize_series(baseline_raw, winsor_pct, winsor_pct)
+                test_data = winsorize_series(test_raw, winsor_pct, winsor_pct)
+            else:
+                baseline_data = baseline_raw
+                test_data = test_raw
+
+            # Vyhodnoť statistický test
             if selected_test == "Welchův t-test":
                 _, p = ttest_ind(baseline_data, test_data, equal_var=False)
             elif selected_test == "Mann–Whitney U test":
                 _, p = mannwhitneyu(baseline_data, test_data, alternative="two-sided")
             else:
                 p = float("nan")
+
             p_values.append(f"{p:.3f}" if p >= 0.0001 else "<0.0001")
+
     summary["P-value"] = p_values
 
     summary = summary.reset_index().rename(columns={
@@ -270,6 +320,7 @@ if data:
         y="Revenue per user",
         points="all",
         color="Varianta",
+        color_discrete_map=color_map,
         height=500
     )
 
@@ -329,6 +380,7 @@ if data:
             opacity=0.6,
             log_y=use_log_y,
             labels={"value": f"{selected_metric} per User", "experiment_group": "Varianta"},
+            color_discrete_map=color_map,
             height=400
         )
         fig_hist.update_layout(xaxis_title=f"{selected_metric} per User")
