@@ -282,6 +282,7 @@ if data:
         "Std_Dev": "Standardní odchylka"
     })
     summary["Revenue / user"] = summary["Revenue / user"].apply(lambda x: f"${x:.2f}")
+    summary = summary.rename(columns={"Revenue / user": "ARPU"})
     summary["Total revenue"] = summary["Total revenue"].apply(lambda x: f"${x:,.2f}")
     summary["Ad revenue"] = summary["Ad revenue"].apply(lambda x: f"${x:,.2f}")
     summary["IAP revenue"] = summary["IAP revenue"].apply(lambda x: f"${x:,.2f}")
@@ -376,7 +377,8 @@ if data:
             x="value",
             color="experiment_group",
             nbins=bin_count,
-            barmode="overlay",
+            #barmode="overlay",
+            barmode="stack",
             opacity=0.6,
             log_y=use_log_y,
             labels={"value": f"{selected_metric} per User", "experiment_group": "Varianta"},
@@ -385,4 +387,59 @@ if data:
         )
         fig_hist.update_layout(xaxis_title=f"{selected_metric} per User")
         st.plotly_chart(fig_hist, use_container_width=True)
+
+# --- Vývoj p-value v čase ---
+st.subheader("📉 Vývoj p-value v čase vůči baseline")
+
+if cumulative_by_day:
+    # Připrav kumulativní data
+    full_df = pd.concat(cumulative_by_day, ignore_index=True)
+    full_df = full_df.sort_values(by=["experiment_group", "den"])
+
+    # Příprava výstupní tabulky
+    pvalue_rows = []
+    baseline_group = sorted(full_df["experiment_group"].unique())[0]
+    test_variants = [v for v in sorted(full_df["experiment_group"].unique()) if v != baseline_group]
+
+    for d in sorted(full_df["den"].unique()):
+        df_d = full_df[full_df["den"] <= d].copy()
+
+        for v in test_variants:
+            base_data = df_d[df_d["experiment_group"] == baseline_group]["selected_value"]
+            test_data = df_d[df_d["experiment_group"] == v]["selected_value"]
+
+            # Winsorizace
+            if winsor_pct > 0:
+                base_data = winsorize_series(base_data, winsor_pct, winsor_pct)
+                test_data = winsorize_series(test_data, winsor_pct, winsor_pct)
+
+            # Statistický test
+            if selected_test == "Welchův t-test":
+                _, p = ttest_ind(base_data, test_data, equal_var=False)
+            elif selected_test == "Mann–Whitney U test":
+                _, p = mannwhitneyu(base_data, test_data, alternative="two-sided")
+            else:
+                p = float("nan")
+
+            pvalue_rows.append({
+                "Den": d,
+                "Varianta": str(v),
+                "p-value": p
+            })
+
+    pvalue_df = pd.DataFrame(pvalue_rows)
+
+    # Vykreslení grafu
+    fig_p = px.line(
+        pvalue_df,
+        x="Den",
+        y="p-value",
+        color="Varianta",
+        color_discrete_map=color_map,
+        markers=True,
+        height=400,
+        labels={"p-value": "p-value", "Den": "Den", "Varianta": "Varianta"}
+    )
+    fig_p.add_hline(y=0.05, line_dash="dot", line_color="red", annotation_text="α = 0.05", annotation_position="top left")
+    st.plotly_chart(fig_p, use_container_width=True)
 
