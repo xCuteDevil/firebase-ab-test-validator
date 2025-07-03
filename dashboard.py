@@ -9,7 +9,16 @@ import base64
 from io import BytesIO
 from typing import Tuple, Optional
 import difflib
+from scipy.stats import norm
 
+def bayesian_prob(mean_a, std_a, n_a, mean_b, std_b, n_b):
+    # Odhad rozptylů
+    var_a = (std_a ** 2) / n_a
+    var_b = (std_b ** 2) / n_b
+    diff_mean = mean_b - mean_a
+    diff_std = (var_a + var_b) ** 0.5
+    # P(ARPU_B > ARPU_A)
+    return norm.cdf(diff_mean / diff_std)
 
 def get_base64_image(img: Image.Image):
     buffered = BytesIO()
@@ -79,6 +88,7 @@ with st.sidebar:
         "Statistický test pro výpočet p-value:",
         ["Welchův t-test", "Mann–Whitney U test"]
     )
+    use_bayesian = st.sidebar.checkbox("Použít bayesovské vyhodnocení", value=False)
     st.markdown("---")
     filter_positive_revenue = st.sidebar.checkbox("Zobrazit pouze hráče s revenue > 0", value=False)
     winsor_pct = st.slider("Winsorizovat hodnoty na percentily:", min_value=0.0, max_value=3.0, value=0.0, step=0.05,
@@ -246,21 +256,21 @@ if data:
     baseline_raw = full_data[full_data["experiment_group"] == baseline_group][metric_column]
 
     p_values = []
+    bayes_probs = []
+
     for group in summary.index:
         if group == baseline_group:
             p_values.append("—")
+            bayes_probs.append("—")
         else:
-            test_raw = full_data[full_data["experiment_group"] == group][metric_column]
+            test_data = full_data[full_data["experiment_group"] == group][metric_column]
 
-            # Aplikuj winsorizaci, pokud je nastavena
             if winsor_pct > 0:
                 baseline_data = winsorize_series(baseline_raw, winsor_pct, winsor_pct)
-                test_data = winsorize_series(test_raw, winsor_pct, winsor_pct)
+                test_data = winsorize_series(test_data, winsor_pct, winsor_pct)
             else:
                 baseline_data = baseline_raw
-                test_data = test_raw
 
-            # Vyhodnoť statistický test
             if selected_test == "Welchův t-test":
                 _, p = ttest_ind(baseline_data, test_data, equal_var=False)
             elif selected_test == "Mann–Whitney U test":
@@ -270,7 +280,22 @@ if data:
 
             p_values.append(f"{p:.3f}" if p >= 0.0001 else "<0.0001")
 
+            if use_bayesian:
+                mean_a = baseline_data.mean()
+                std_a = baseline_data.std()
+                n_a = len(baseline_data)
+                mean_b = test_data.mean()
+                std_b = test_data.std()
+                n_b = len(test_data)
+                prob = bayesian_prob(mean_a, std_a, n_a, mean_b, std_b, n_b)
+                bayes_probs.append(f"{prob * 100:.1f}%")
+            else:
+                bayes_probs.append("")
+
     summary["P-value"] = p_values
+
+    if use_bayesian:
+        summary["P(B > A)"] = bayes_probs
 
     summary = summary.reset_index().rename(columns={
         "experiment_group": "Varianta",
@@ -396,6 +421,9 @@ if cumulative_by_day:
     full_df = pd.concat(cumulative_by_day, ignore_index=True)
     full_df = full_df.sort_values(by=["experiment_group", "den"])
 
+    with st.expander("⚙️ Nastavení p-value grafu"):
+        log_y_pval = st.checkbox("Použít logaritmickou osu Y pro p-value", value=False)
+
     # Příprava výstupní tabulky
     pvalue_rows = []
     baseline_group = sorted(full_df["experiment_group"].unique())[0]
@@ -410,8 +438,11 @@ if cumulative_by_day:
 
             # Winsorizace
             if winsor_pct > 0:
-                base_data = winsorize_series(base_data, winsor_pct, winsor_pct)
-                test_data = winsorize_series(test_data, winsor_pct, winsor_pct)
+                combined = pd.concat([base_data, test_data])
+                lower = combined.quantile(winsor_pct / 100)
+                upper = combined.quantile(1 - winsor_pct / 100)
+                base_data = base_data.clip(lower=lower, upper=upper)
+                test_data = test_data.clip(lower=lower, upper=upper)
 
             # Statistický test
             if selected_test == "Welchův t-test":
@@ -423,12 +454,14 @@ if cumulative_by_day:
 
             pvalue_rows.append({
                 "Den": d,
-                "Varianta": str(v),
+                "Varianta": str(int(v)),
                 "p-value": p
             })
 
     pvalue_df = pd.DataFrame(pvalue_rows)
-
+    color_map = {str(k): v for k, v in {
+        0: "#9E9E9E", 1: "#4285F4", 2: "#FF8F00", 3: "#EC407A", 4: "#00B8D4"
+    }.items()}
     # Vykreslení grafu
     fig_p = px.line(
         pvalue_df,
@@ -441,5 +474,85 @@ if cumulative_by_day:
         labels={"p-value": "p-value", "Den": "Den", "Varianta": "Varianta"}
     )
     fig_p.add_hline(y=0.05, line_dash="dot", line_color="red", annotation_text="α = 0.05", annotation_position="top left")
+
+    if log_y_pval:
+        fig_p.update_yaxes(type="log")
+
     st.plotly_chart(fig_p, use_container_width=True)
+
+    from scipy.stats import norm
+
+if use_bayesian and cumulative_by_day:
+    st.subheader("📈 Vývoj bayesovské pravděpodobnosti P(B > A) v čase")
+
+    bayes_rows = []
+    full_df = pd.concat(cumulative_by_day, ignore_index=True)
+    full_df = full_df.sort_values(by=["experiment_group", "den"])
+    baseline_group = sorted(full_df["experiment_group"].unique())[0]
+    test_variants = [v for v in sorted(full_df["experiment_group"].unique()) if v != baseline_group]
+
+    for d in sorted(full_df["den"].unique()):
+        df_d = full_df[full_df["den"] <= d].copy()
+
+        for v in test_variants:
+            base_data = df_d[df_d["experiment_group"] == baseline_group]["selected_value"]
+            test_data = df_d[df_d["experiment_group"] == v]["selected_value"]
+
+            if winsor_pct > 0:
+                combined = pd.concat([base_data, test_data])
+                lower = combined.quantile(winsor_pct / 100)
+                upper = combined.quantile(1 - winsor_pct / 100)
+                base_data = base_data.clip(lower=lower, upper=upper)
+                test_data = test_data.clip(lower=lower, upper=upper)
+
+            mean_a = base_data.mean()
+            std_a = base_data.std()
+            n_a = len(base_data)
+            mean_b = test_data.mean()
+            std_b = test_data.std()
+            n_b = len(test_data)
+
+            prob = bayesian_prob(mean_a, std_a, n_a, mean_b, std_b, n_b)
+            bayes_rows.append({
+                "Den": d,
+                "Varianta": str(int(v)),
+                "P(B > A)": prob
+            })
+
+    bayes_df = pd.DataFrame(bayes_rows)
+
+    with st.expander("⚙️ Nastavení P(B > A) grafu"):
+        y_scale = st.radio("Typ osy Y:", ["Lineární", "Logit"], horizontal=True)
+
+    if y_scale == "Logit":
+        bayes_df = bayes_df.copy()
+        bayes_df["logit"] = bayes_df["P(B > A)"].apply(lambda p: math.log(p / (1 - p)) if 0 < p < 1 else None)
+        y_col = "logit"
+        y_label = "logit(P(B > A))"
+    else:
+        y_col = "P(B > A)"
+        y_label = "P(B > A)"
+
+    fig_bayes = px.line(
+        bayes_df,
+        x="Den",
+        y=y_col,
+        color="Varianta",
+        color_discrete_map=color_map,
+        markers=True,
+        height=400,
+        labels={y_col: y_label, "Den": "Den", "Varianta": "Varianta"}
+    )
+
+    fig_bayes.add_hline(
+        y=math.log(0.95 / 0.05) if y_scale == "Logit" else 0.95,
+        line_dash="dot",
+        line_color="green",
+        annotation_text="95 % hranice",
+        annotation_position="top left"
+    )
+
+    st.plotly_chart(fig_bayes, use_container_width=True)
+
+
 
