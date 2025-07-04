@@ -38,18 +38,28 @@ def bq_estimate_total_size(start_date, end_date):
         if not os.path.exists(filename):
             # Query for user acquisitions on the current date
             query = f"""
+            WITH new_users AS (
+                SELECT DISTINCT user_pseudo_id
+                FROM hexapolis-bcb77.Events.User_events
+                WHERE event_date = "{date_str}"
+                    AND new_event_name = "new_user"
+            )
+
             SELECT
-                user_pseudo_id,
-                name,
-                mobile_model_name,
-                operating_system_version,
-                country
-            FROM 
-                `hexapolis-bcb77.Events.User_events`
-            WHERE 
-                event_date = "{date_str}" 
-                AND new_event_name = "new_user"
+                e.user_pseudo_id,
+                MAX(e.experiment_number) AS experiment_number,
+                MAX(e.experiment_group) AS experiment_group,
+                ANY_VALUE(e.name) AS name,
+                ANY_VALUE(e.medium) AS medium,
+                ANY_VALUE(e.country) AS country,
+                ANY_VALUE(e.mobile_model_name) AS mobile_model_name,
+                ANY_VALUE(e.operating_system_version) AS operating_system_version
+            FROM hexapolis-bcb77.Events.User_events e
+            JOIN new_users nu ON e.user_pseudo_id = nu.user_pseudo_id
+            WHERE e.event_date = "{date_str}"
+            GROUP BY e.user_pseudo_id
             """
+
 
             # Run dry run to estimate size
             dry_run_job = client.query(query, job_config=bq.QueryJobConfig(dry_run=True))
@@ -78,21 +88,28 @@ def bq_run_queries(start_date, end_date):
         if not os.path.exists(filename):
             # Query for user acquisitions on the current date
             query = f"""
+            WITH new_users AS (
+                SELECT DISTINCT user_pseudo_id
+                FROM hexapolis-bcb77.Events.User_events
+                WHERE event_date = "{date_str}"
+                    AND new_event_name = "new_user"
+            )
+
             SELECT
-                user_pseudo_id, 
-                experiment_number, 
-                experiment_group,
-                name,
-                medium,
-                country,
-                mobile_model_name,
-                operating_system_version
-            FROM 
-                `hexapolis-bcb77.Events.User_events`
-            WHERE 
-                event_date = "{date_str}" 
-                AND new_event_name = "new_user"
+                e.user_pseudo_id,
+                MAX(e.experiment_number) AS experiment_number,
+                MAX(e.experiment_group) AS experiment_group,
+                ANY_VALUE(e.name) AS name,
+                ANY_VALUE(e.medium) AS medium,
+                ANY_VALUE(e.country) AS country,
+                ANY_VALUE(e.mobile_model_name) AS mobile_model_name,
+                ANY_VALUE(e.operating_system_version) AS operating_system_version
+            FROM hexapolis-bcb77.Events.User_events e
+            JOIN new_users nu ON e.user_pseudo_id = nu.user_pseudo_id
+            WHERE e.event_date = "{date_str}"
+            GROUP BY e.user_pseudo_id
             """
+
 
             # Run the actual query
             query_job = client.query(query)
